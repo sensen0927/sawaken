@@ -1,0 +1,148 @@
+.title_top_employment_info {
+	font-size: 23px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 18%;
+	transform: translateX(-50%);
+}
+.title_top_development {
+	font-size: 23px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 35%;
+	transform: translateX(-50%);
+}
+.title_top_chose_reason {
+	font-size: 23px;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-50%);
+	left: 9%;
+	transform: translateX(-50%);
+}
+@media screen and (max-width: 767px) {
+	.title_top_development {
+		font-size: 20px;
+		top: 20%;
+		left: 35%;
+	}
+
+	.title_top_chose_reason {
+		font-size: 20px;
+		left: 12%;
+	}
+
+	.title_top_employment_info {
+		font-size: 20px;
+		left: 27%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.title_top_employment_info {
+		font-size: 20px;
+		left: 30%;
+	}
+}
+@media screen and (max-width: 570px) {
+	.title_top_chose_reason {
+		font-size: 20px;
+		left: 20%;
+	}
+	.title_top_employment_info {
+		font-size: 20px;
+		left: 38%;
+	}
+}
+.bread {
+	padding-top: 43px;
+	margin-top: 0;
+}
+.bread a,
+.bread span {
+	color: black;
+}
+.banner-company_info {
+	height: 500px !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(
+			135deg,
+			rgba(0, 0, 0, 0.8) 0,
+			rgba(0, 0, 0, 0.2) 30%
+		),
+		url(../images/company_info/header_top.jpeg);
+}
+.banner-development {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(
+			135deg,
+			rgba(0, 0, 0, 0.8) 0,
+			rgba(0, 0, 0, 0.2) 30%
+		),
+		url(../images/development/background_development.jpeg);
+}
+.banner-chose_reason {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(
+			135deg,
+			rgba(0, 0, 0, 0.8) 0,
+			rgba(0, 0, 0, 0.2) 30%
+		),
+		url(../images/top/image-01.jpg);
+}
+.banner-employment_info {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(
+			135deg,
+			rgba(0, 0, 0, 0.8) 0,
+			rgba(0, 0, 0, 0.2) 30%
+		),
+		url(../images/employment_info/employment_info.jpeg);
+}
+.form-control {
+	background-color: #efefef;
+}
+.archive .single a {
+	color: black;
+}
+.wp-pagenavi {
+	display: flex;
+}
+.wp-pagenavi a,
+.wp-pagenavi span {
+	position: relative;
+	display: block;
+	padding: 0.5rem 0.75rem;
+	margin-left: -1px;
+	line-height: 1.25;
+	color: #007bff;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi span:hover {
+	color: #0056b3;
+	text-decoration: none;
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+}
+.wp-pagenavi .current {
+	z-index: 1;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+/* END CONSTRUCTION PAGE */
