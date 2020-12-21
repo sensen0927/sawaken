@@ -46,11 +46,6 @@
                         <a class="l-footer__navwrap--item-tit-ja" href="<?php echo home_url(); ?>/alpolic/">アルポリック</a>
                     </div>
                 </div>
-                <div class="l-footer__navwrap--item-child">
-                    <div class="l-footer__navwrap--item-tit">
-                        <a class="l-footer__navwrap--item-tit-ja" href="<?php echo home_url(); ?>"> よくある質問</a>
-                    </div>
-                </div>
             </div>
 
             <div class="l-footer__navwrap--item">

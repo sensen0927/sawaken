@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-addition.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/custom_development.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/alpolic.css">
+
     <?php wp_head(); ?>
 </head>
 
