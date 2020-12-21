@@ -107,9 +107,11 @@
 </div>
 <!--/ l-page（共通）-->
 
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lib.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/swiper-bundle.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/common.js"></script>
 <script>
 var swiper = new Swiper('.banner-slider .swiper-container', {
     loop: true,

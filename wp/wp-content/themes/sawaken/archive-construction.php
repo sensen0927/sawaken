@@ -1,4 +1,4 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 
 <div class="top-banner">
@@ -54,7 +54,7 @@
                         <div class="img-list-wrapper">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                             $my_query = new WP_Query(
-                                array('paged' => $paged, 'posts_per_page' => 3, 'post_type' => 'construction')
+                                array('paged' => $paged, 'posts_per_page' => 18, 'post_type' => 'construction')
                             );
                             ?>
                             <?php if ($my_query->have_posts()) :
@@ -66,12 +66,12 @@
                                         <?php the_post_thumbnail('single-post-thumbnail', array('title' => '' . get_the_title() . '')); ?>
                                         <!-- サムネイルの画像タイトルを投稿タイトルへ変更 -->
                                         <?php
-                                                $image = get_post_meta(get_the_ID(), 'thumbnail', true);
-                                                $size =  array(200, 200);
-                                                if ($image) {
-                                                    echo wp_get_attachment_image($image, $size);
-                                                }
-                                                ?>
+                                            $image = get_post_meta(get_the_ID(), 'img01', true);
+                                            $size =  array(200, 200);
+                                            if ($image) {
+                                                echo wp_get_attachment_image($image, $size);
+                                            }
+                                        ?>
                                     </div>
                                 </a>
                                 <div class="image-title">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <?php else : //記事が1つも無い場合 
+                            <?php else : //記事が1つも無い場合
                             ?>
                             <p>現在表示できる記事はありません。</p><br>
                             <div class="btn">

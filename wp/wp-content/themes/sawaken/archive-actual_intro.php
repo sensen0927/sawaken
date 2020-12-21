@@ -1,4 +1,4 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 
 <div class="top-banner">
@@ -29,28 +29,47 @@
                 <div class="page-title">
                     <span class="page-title-span">実績紹介</span>
                 </div>
+<?php
+$args = array(
+    'post_type' => 'actual_intro',
+    'post_status' => 'publish',
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'posts_per_page'=>-1,
+);
+?>
+<?php $wp_query = new WP_Query( $args ); ?>
                 <div class="page-content">
                     <div class="search_form">
                         <ul>
                             <li class="company_name">
-                                <select class="">
-                                    <option>会社名</option>
-                                    <option>サンプル株式会社</option>
-                                    <option>サンプル株式会社</option>
+                                <select id="company_name_select">
+                                    <option value="">会社名を選択</option>
+<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+                                    <option value="<?php the_title();?>"><?php the_title();?></option>
+<?php endwhile; ?>
                                 </select>
                             </li>
                             <li class="construction_type">
-                                <select class="">
-                                    <option>工事種別</option>
-                                    <option>サンプルサンプル</option>
-                                    <option>サンプルサンプル</option>
+                                <select id="material_name_select">
+                                    <option value="">材料を選択</option>
+<?php
+    $terms = get_terms('material','hide_empty=0');
+    foreach ( $terms as $term ) {
+    echo '<option value="'. esc_html($term->slug).'">' .esc_html($term->name). '</option>';
+    }
+?>
                                 </select>
                             </li>
                             <li class="design_office">
-                                <select class="">
-                                    <option>設計事務所</option>
-                                    <option>サンプル事務所</option>
-                                    <option>サンプル事務所</option>
+                                <select id="product_name_select">
+                                    <option value="">製品を選択</option>
+<?php
+    $terms = get_terms('product','hide_empty=0');
+    foreach ( $terms as $term ) {
+        echo '<option value="'. esc_html($term->slug).'">' .esc_html($term->name). '</option>';
+    }
+?>
                                 </select>
                             </li>
                         </ul>
@@ -58,35 +77,32 @@
                     <div class="search_btn">
                         <ul>
                             <li>
-                                <button type="button">検索</button>
+                                <button type="button" id="actual_intro_submit">検索</button>
                             </li>
                         </ul>
                     </div>
-                    <table class="search_result">
+                    <table class="search_result" id="actual_intro_result_table">
                         <thead>
                             <tr>
                                 <th>会社名</th>
-                                <th>工事種別</th>
-                                <th>設計事務所</th>
+                                <th>材料</th>
+                                <th>製品</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-                            $my_query = new WP_Query(
-                                array('paged' => $paged, 'posts_per_page' => 9, 'post_type' => 'actual_intro')
-                            );
-                            ?>
-                            <?php if ($my_query->have_posts()) :
-                                while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                            <tr>
-                                <td><?php echo get_post_meta(get_the_ID(), 'company-name', true); ?></td>
-                                <td><?php echo get_post_meta(get_the_ID(), 'construction-type', true); ?></td>
-                                <td><?php echo get_post_meta(get_the_ID(), 'design-office', true); ?></td>
-                            </tr>
-                            <?php endwhile; // 繰り返し終了 
-                                ?>
-                            <?php endif; //条件分岐終了 
-                            ?>
+<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+<?php if(get_field('mp_list')){ ?>
+    <?php while(the_repeater_field('mp_list')): ?>
+        <?php $material = get_sub_field('list_material'); ?>
+        <?php $product = get_sub_field('list_product'); ?>
+<tr>
+    <td data-company="<?php the_title();?>"><?php the_title();?></td>
+    <td data-material="<?php echo $material->slug; ?>"><?php echo $material->name; ?></td>
+    <td data-product="<?php echo $product->slug; ?>"><?php echo $product->name; ?></td>
+</tr>
+    <?php endwhile; ?>
+<?php }; ?>
+<?php endwhile; ?>
                         </tbody>
                     </table>
                 </div>

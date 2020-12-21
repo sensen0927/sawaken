@@ -1,4 +1,4 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 
 <div class="top-banner">
@@ -62,7 +62,7 @@
                             $my_query = new WP_Query();
                             $param = array(
                                 'paged' => $paged,
-                                'posts_per_page' => 9,
+                                'posts_per_page' => 18,
                                 'post_type' => 'construction',
                                 'taxonomy' => $taxonomy_name,
                                 'term' => $term_var,
@@ -78,7 +78,7 @@
                                         <?php the_post_thumbnail('single-post-thumbnail', array('title' => '' . get_the_title() . '')); ?>
                                         <!-- サムネイルの画像タイトルを投稿タイトルへ変更 -->
                                         <?php
-                                                $image = get_post_meta(get_the_ID(), 'thumbnail', true);
+                                                $image = get_post_meta(get_the_ID(), 'img01', true);
                                                 $size =  array(200, 200);
                                                 if ($image) {
                                                     echo wp_get_attachment_image($image, $size);
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <?php else : //記事が1つも無い場合 
+                            <?php else : //記事が1つも無い場合
                             ?>
                             <p>現在表示できる記事はありません。</p><br>
                             <div class="btn">
