@@ -197,7 +197,7 @@ Template Name: トップページ
                             </a>
                         </li>
                         <li class="top-product--productitem h225-w300">
-                            <a href="<?php echo home_url(); ?>/cat_use/apartment/" class="hover-gradation">
+                            <a href="<?php echo home_url(); ?>/cat_use/housing-complex/" class="hover-gradation">
                                 <div class="top-product--productitem__titarea">
                                     <h3 class="top-product--productitem__tit top-product__tit_after">集合住宅</h3>
                                 </div>
@@ -208,7 +208,7 @@ Template Name: トップページ
                             </a>
                         </li>
                         <li class="top-product--productitem h225-w300">
-                            <a href="<?php echo home_url(); ?>/" class="hover-gradation">
+                            <a href="<?php echo home_url(); ?>/cat_use/medical-institution/" class="hover-gradation">
                                 <div class="top-product--productitem__titarea">
                                     <h3 class="top-product--productitem__tit top-product__tit_after">医療機関</h3>
                                 </div>
@@ -230,7 +230,7 @@ Template Name: トップページ
                             </a>
                         </li>
                         <li class="top-product--productitem h225-w300">
-                            <a href="<?php echo home_url(); ?>/cat_use/education/" class="hover-gradation">
+                            <a href="<?php echo home_url(); ?>/cat_use/eresearch/" class="hover-gradation">
                                 <div class="top-product--productitem__titarea">
                                     <h3 class="top-product--productitem__tit top-product__tit_after">教育・研究施設</h3>
                                 </div>
