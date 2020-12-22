@@ -1,3 +1,4 @@
+/*固定ページメインビジュアル*/
 .title_top_employment_info {
 	font-size: 23px;
 	color: #fff;
@@ -31,18 +32,15 @@
 		top: 20%;
 		left: 35%;
 	}
-
 	.title_top_chose_reason {
 		font-size: 20px;
 		left: 12%;
 	}
-
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 27%;
 	}
 }
-
 @media screen and (max-width: 650px) {
 	.title_top_employment_info {
 		font-size: 20px;
@@ -58,14 +56,6 @@
 		font-size: 20px;
 		left: 38%;
 	}
-}
-.bread {
-	padding-top: 43px;
-	margin-top: 0;
-}
-.bread a,
-.bread span {
-	color: black;
 }
 .banner-company_info {
 	height: 500px !important;
@@ -112,12 +102,29 @@
 		),
 		url(../images/employment_info/employment_info.jpeg);
 }
+/*パンくず*/
+.bread {
+	padding-top: 43px;
+	margin-top: 0;
+}
+.bread a,
+.bread span {
+	color: black;
+}
+/*form*/
 .form-control {
 	background-color: #efefef;
 }
-.archive .single a {
+/*archive singleページ a*/
+.archive a,
+.single a {
 	color: black;
 }
+/*construction*/
+.page-title-list-text span:hover:before {
+	color: #0056b3;
+}
+/*ページャー*/
 .wp-pagenavi {
 	display: flex;
 }
@@ -128,7 +135,7 @@
 	padding: 0.5rem 0.75rem;
 	margin-left: -1px;
 	line-height: 1.25;
-	color: #007bff;
+	color: #0056b3;
 	background-color: #fff;
 	border: 1px solid #dee2e6;
 }
@@ -142,7 +149,143 @@
 .wp-pagenavi .current {
 	z-index: 1;
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
+	background-color: #0056b3;
+	border-color: #0056b3;
 }
+@media screen and (max-width: 767px) {
+	.notice-template-default .page-title {
+		margin-left: 0;
+	}
+}
+/*サブメニュー*/
+.sub-nav {
+	transition: opacity 0.3s, transform 0.3s, visibility 0s ease 0.3s;
+	position: absolute;
+	right: 0;
+	transform: translateY(-10px);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 99;
+	width: 100vw;
+	background: #eef3f8;
+	height: 70px;
+}
+.sub-list {
+	max-width: 1260px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 18px;
+	line-height: 70px;
+	display: flex;
+}
+.sub-list li {
+	display: inline;
+	list-style: none;
+	font-weight: 700;
+	padding-right: 50px;
+}
+.sub-list li a::before {
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	top: 10px;
+	left: -15px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.sub-list li a {
+	padding-left: 5px;
+	color: black;
+	position: relative;
+}
+.sub-list li a:hover {
+	color: #3c93c9;
+}
+.l-nav__item:hover .sub-nav {
+	opacity: 1;
+	transition-delay: 0s;
+	transform: translateY(0px);
+	visibility: visible;
+}
+.ll-sp__navwrap--item:hover .sub-nav {
+	opacity: 1;
+	transition-delay: 0s;
+	transform: translateY(0px);
+	visibility: visible;
+}
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit > a::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-top: 1px solid #333;
+	border-right: 1px solid #333;
+	top: 20px;
+	right: 20px;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu {
+	border-top: 1px solid #e3e1e1;
+	display: block;
+	padding: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::before,
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 14px;
+	height: 1px;
+	background: #333;
+	top: 25px;
+	right: 15px;
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::after {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu.active::after {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list {
+	background: #004893;
+	display: none;
+	padding: 15px 0;
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li {
+	font-size: 1rem;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li a {
+	color: #fff;
+	padding: 8px 15px 8px 30px;
+	position: relative;
+}
+
+.l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li a::before {
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+	top: 13px;
+	left: 10px;
+}
+
 /* END CONSTRUCTION PAGE */

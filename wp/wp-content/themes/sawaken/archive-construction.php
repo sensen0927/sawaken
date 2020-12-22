@@ -66,12 +66,12 @@
                                         <?php the_post_thumbnail('single-post-thumbnail', array('title' => '' . get_the_title() . '')); ?>
                                         <!-- サムネイルの画像タイトルを投稿タイトルへ変更 -->
                                         <?php
-                                            $image = get_post_meta(get_the_ID(), 'img01', true);
-                                            $size =  array(200, 200);
-                                            if ($image) {
-                                                echo wp_get_attachment_image($image, $size);
-                                            }
-                                        ?>
+                                                $image = get_post_meta(get_the_ID(), 'img01', true);
+                                                $size =  array(200, 200);
+                                                if ($image) {
+                                                    echo wp_get_attachment_image($image, $size);
+                                                }
+                                                ?>
                                     </div>
                                 </a>
                                 <div class="image-title">
@@ -86,15 +86,15 @@
                                 <a href="<?php echo esc_url(home_url()); ?>/">TOPへ戻る</a>
                             </div>
                             <?php endif; ?>
-                            <div class="pagination justify-content-center notice_pagination">
-                                <?php if (function_exists('wp_pagenavi')) { //ページネーションプラグイン
-                                    wp_pagenavi(array('query' => $my_query));
-                                } ?>
-                                <?php wp_reset_postdata();
-                                wp_reset_query(); ?>
-                            </div>
-
                         </div>
+                        <div class="pagination justify-content-center notice_pagination">
+                            <?php if (function_exists('wp_pagenavi')) { //ページネーションプラグイン
+                                wp_pagenavi(array('query' => $my_query));
+                            } ?>
+                            <?php wp_reset_postdata();
+                            wp_reset_query(); ?>
+                        </div>
+
                     </section>
                 </div>
                 <a class="l-footer__pagetop" href="#pagetop">
@@ -102,6 +102,7 @@
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/common/button_to_top.png">
                 </a>
             </div>
+        </div>
     </main>
 </div>
 

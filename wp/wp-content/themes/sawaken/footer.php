@@ -19,7 +19,8 @@
                 </div>
                 <div class="l-footer__navwrap--item-child">
                     <div class="l-footer__navwrap--item-tit">
-                        <a class="l-footer__navwrap--item-tit-ja" href="<?php echo home_url(); ?>/chose_reason/">>
+                        <a class="l-footer__navwrap--item-tit-ja"
+                            href="<?php echo home_url(); ?>/company_info/chose_reason/">>
                             選ばれる理由</a>
                     </div>
                 </div>

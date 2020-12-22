@@ -5,7 +5,7 @@ Template Name: トップページ
 ?>
 <?php get_header() //header.phpを取得 
 ?>
-
+<!--
 <div class="top-global">
     <div class="l-container">
         <ol class="top-breadcrumb">
@@ -23,6 +23,7 @@ Template Name: トップページ
         </ol>
     </div>
 </div>
+-->
 
 <div class="l-content l-content-index">
     <main class="l-main">

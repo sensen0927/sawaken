@@ -5,11 +5,9 @@
     <div class="title_top_banner">
         <span>施工事例</span>
     </div>
-
     <div class="l-container element_top_banner">
     </div>
 </div>
-
 <div class="l-content">
     <div class="element"></div>
     <main class="l-main-common">
@@ -48,9 +46,6 @@
                         ?>
                     </div>
                 </div>
-
-
-
                 <div class="page-content">
                     <section>
                         <div class="img-list-wrapper">
@@ -70,8 +65,6 @@
                             $my_query->query($param);
                             ?>
                             <?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
-
-
                             <div class="img-item">
                                 <a href="<?php the_permalink(); ?>">
                                     <div class="image-item">
@@ -98,14 +91,13 @@
                                 <a href="<?php echo esc_url(home_url()); ?>/">TOPへ戻る</a>
                             </div>
                             <?php endif; ?>
-                            <div class="pagination justify-content-center notice_pagination">
-                                <?php if (function_exists('wp_pagenavi')) { //ページネーションプラグイン
-                                    wp_pagenavi(array('query' => $my_query));
-                                } ?>
-                                <?php wp_reset_postdata();
-                                wp_reset_query(); ?>
-                            </div>
-
+                        </div>
+                        <div class="pagination justify-content-center notice_pagination">
+                            <?php if (function_exists('wp_pagenavi')) { //ページネーションプラグイン
+                                wp_pagenavi(array('query' => $my_query));
+                            } ?>
+                            <?php wp_reset_postdata();
+                            wp_reset_query(); ?>
                         </div>
                     </section>
                 </div>
@@ -114,6 +106,7 @@
                         src="<?php echo get_template_directory_uri(); ?>/assets/images/common/button_to_top.png">
                 </a>
             </div>
+        </div>
     </main>
 </div>
 

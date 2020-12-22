@@ -62,7 +62,22 @@
                     <ul class="l-nav__list">
                         <li class="l-nav__item"><a href="<?php echo home_url(); ?>" class="l-nav__link">HOME</a></li>
                         <li class="l-nav__item"><a href="<?php echo home_url(); ?>/company_info/"
-                                class="l-nav__link">企業情報</a></li>
+                                class="l-nav__link">企業情報</a>
+                            <div class="sub-nav">
+                                <ul class="sub-list">
+                                    <li>
+                                        <a href="<?php echo home_url(); ?>/company_info/development/">
+                                            <span>事業内容</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo home_url(); ?>/company_info/chose_reason/">
+                                            <span>選ばれる理由</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="l-nav__item"><a href="<?php echo home_url(); ?>/construction/"
                                 class="l-nav__link">施工事例</a></li>
                         <li class="l-nav__item"><a href="<?php echo home_url(); ?>/actual_intro/"
@@ -86,8 +101,19 @@
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">
                             <div class="l-sp__navwrap--item-tit js-accordion-btn">
-                                <a class="l-sp__navwrap--item-tit-ja"
-                                    href="<?php echo home_url(); ?>/company_info/">企業情報</a>
+                                <span class="l-sp__navwrap--item-tit-ja sub-list-menu">企業情報</span>
+                                <ul class="sub-list">
+                                    <li>
+                                        <a href="<?php echo home_url(); ?>/company_info/development/">
+                                            <span>事業内容</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo home_url(); ?>/company_info/chose_reason/">
+                                            <span>選ばれる理由</span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">
