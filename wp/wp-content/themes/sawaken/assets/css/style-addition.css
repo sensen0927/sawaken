@@ -300,16 +300,83 @@
 	font-size: 64px;
 	font-weight: bold;
 	color: white;
+	margin-bottom: 50px;
 }
 .title_top_alpolic p {
 	font-size: 32px;
 	font-weight: bold;
 	color: white;
+	line-height: 1.2;
 }
 .banner-alpolic > .element_top_banner {
 	display: none;
 }
 .page-id-42 .element {
 	display: none;
+}
+.page-id-42 input[type="submit"] {
+	background-color: #3c93c9;
+}
+@media screen and (max-width: 767.98px) {
+	.title_top_alpolic h4 {
+		font-size: 41px;
+	}
+	.title_top_alpolic p {
+		font-size: 18px;
+	}
+	.alpolic_button {
+		width: 100%;
+	}
+	.page-id-42 .item-text {
+		font-size: 13px;
+	}
+}
+/*recruit*/
+.page-id-32 .item-img {
+	height: auto;
+}
+.page-id-32 .item-img img,
+.page-id-32 .top-content-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*reason*/
+.reason {
+	margin: 50px auto;
+}
+.reason-img {
+	height: 180px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.reason-img img {
+	width: auto;
+	height: 100%;
+}
+.reason-txt {
+	font-size: 1.2rem;
+	text-align: center;
+}
+/*archive post-type-archive post-type-archive-actual_intro logged-in*/
+.search_form {
+	margin-top: 15px;
+}
+.search_form select {
+	font-size: 18px;
+}
+.search_btn {
+	margin-top: 60px;
+}
+.search_btn button {
+	height: 50px;
+}
+table.search_result th {
+	height: 60px;
+	font-size: 20px;
+}
+table.search_result td {
+	height: 60px;
+	font-size: 18px;
 }
 /* END CONSTRUCTION PAGE */
