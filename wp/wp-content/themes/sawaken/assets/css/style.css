@@ -3538,7 +3538,7 @@ table.search_result td {
 }
 .title_top_banner {
 	font-size: 23px;
-	color: #000;
+	color: white;
 	position: absolute;
 	top: 40%;
 	transform: translateY(-50%);

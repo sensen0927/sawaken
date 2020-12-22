@@ -91,7 +91,11 @@
 		),
 		url(../images/top/image-01.jpg);
 }
-.banner-employment_info {
+.banner-contact_us,
+.banner-site_map,
+.banner-privacy_policy,
+.post-type-archive-notice .top-banner,
+.notice-template-default .top-banner {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -100,8 +104,9 @@
 			rgba(0, 0, 0, 0.8) 0,
 			rgba(0, 0, 0, 0.2) 30%
 		),
-		url(../images/employment_info/employment_info.jpeg);
+		url(../images/common/main-img.jpg);
 }
+
 /*パンくず*/
 .bread {
 	padding-top: 43px;
@@ -229,7 +234,6 @@
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu {
 	border-top: 1px solid #e3e1e1;
 	display: block;
@@ -237,7 +241,6 @@
 	position: relative;
 	cursor: pointer;
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::before,
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::after {
 	content: "";
@@ -249,38 +252,32 @@
 	top: 25px;
 	right: 15px;
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu::after {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list-menu.active::after {
 	-webkit-transform: rotate(0deg);
 	transform: rotate(0deg);
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list {
 	background: #004893;
 	display: none;
 	padding: 15px 0;
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li {
 	font-size: 1rem;
 	display: block;
 	height: 50px;
 	line-height: 50px;
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li a {
 	color: #fff;
 	padding: 8px 15px 8px 30px;
 	position: relative;
 }
-
 .l-sp__navwrap--item > .l-sp__navwrap--item-tit .sub-list li a::before {
 	border-top: 1px solid #fff;
 	border-right: 1px solid #fff;
@@ -288,4 +285,31 @@
 	left: 10px;
 }
 
+/*alpolic*/
+.banner-alpolic {
+}
+.title_top_alpolic {
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.title_top_alpolic h4 {
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+}
+.title_top_alpolic p {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+.banner-alpolic > .element_top_banner {
+	display: none;
+}
+.page-id-42 .element {
+	display: none;
+}
 /* END CONSTRUCTION PAGE */
