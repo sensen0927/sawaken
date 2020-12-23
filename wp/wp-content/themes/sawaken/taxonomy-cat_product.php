@@ -5,8 +5,6 @@
     <div class="title_top_banner">
         <span>施工事例</span>
     </div>
-    <div class="l-container element_top_banner">
-    </div>
 </div>
 <div class="l-content">
     <div class="element"></div>

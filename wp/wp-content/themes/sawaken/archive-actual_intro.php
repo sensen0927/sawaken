@@ -5,9 +5,6 @@
     <div class="title_top_banner">
         <span>実績紹介</span>
     </div>
-
-    <div class="l-container element_top_banner">
-    </div>
 </div>
 
 <div class="l-content">
@@ -29,46 +26,47 @@
                 <div class="page-title">
                     <span class="page-title-span">実績紹介</span>
                 </div>
-<?php
-$args = array(
-    'post_type' => 'actual_intro',
-    'post_status' => 'publish',
-    'posts_per_page'=>-1,
-);
-?>
-<?php $wp_query = new WP_Query( $args ); ?>
+                <?php
+                $args = array(
+                    'post_type' => 'actual_intro',
+                    'post_status' => 'publish',
+                    'orderby' => 'post_date',
+                    'order' => 'DESC',
+                    'posts_per_page' => -1,
+                );
+                ?>
+                <?php $wp_query = new WP_Query($args); ?>
                 <div class="page-content">
                     <div class="search_form">
                         <ul>
                             <li class="company_name">
                                 <select id="company_name_select">
                                     <option value="">会社名を選択</option>
-<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-<?php $slug = urldecode($post->post_name); ?>
-                                    <option value="<?php echo $slug;?>"><?php the_title();?></option>
-<?php endwhile; ?>
+                                    <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                                    <option value="<?php the_title(); ?>"><?php the_title(); ?></option>
+                                    <?php endwhile; ?>
                                 </select>
                             </li>
                             <li class="construction_type">
                                 <select id="material_name_select">
                                     <option value="">材料を選択</option>
-<?php
-    $terms = get_terms('material','hide_empty=0');
-    foreach ( $terms as $term ) {
-    echo '<option value="'. urldecode($term->slug).'">' .esc_html($term->name). '</option>';
-    }
-?>
+                                    <?php
+                                    $terms = get_terms('material', 'hide_empty=0');
+                                    foreach ($terms as $term) {
+                                        echo '<option value="' . esc_html($term->slug) . '">' . esc_html($term->name) . '</option>';
+                                    }
+                                    ?>
                                 </select>
                             </li>
                             <li class="design_office">
                                 <select id="product_name_select">
                                     <option value="">製品を選択</option>
-<?php
-    $terms = get_terms('product','hide_empty=0');
-    foreach ( $terms as $term ) {
-        echo '<option value="'. urldecode($term->slug).'">' .esc_html($term->name). '</option>';
-    }
-?>
+                                    <?php
+                                    $terms = get_terms('product', 'hide_empty=0');
+                                    foreach ($terms as $term) {
+                                        echo '<option value="' . esc_html($term->slug) . '">' . esc_html($term->name) . '</option>';
+                                    }
+                                    ?>
                                 </select>
                             </li>
                         </ul>
@@ -89,20 +87,19 @@ $args = array(
                             </tr>
                         </thead>
                         <tbody>
-<?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-<?php if(get_field('mp_list')){ ?>
-    <?php while(the_repeater_field('mp_list')): ?>
-        <?php $material = get_sub_field('list_material'); ?>
-        <?php $product = get_sub_field('list_product'); ?>
-        <?php $slug = urldecode($post->post_name); ?>
-<tr>
-    <td data-company="<?php echo $slug;?>"><?php the_title();?></td>
-    <td data-material="<?php echo urldecode($material->slug); ?>"><?php echo $material->name; ?></td>
-    <td data-product="<?php echo urldecode($product->slug); ?>"><?php echo $product->name; ?></td>
-</tr>
-    <?php endwhile; ?>
-<?php }; ?>
-<?php endwhile; ?>
+                            <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                            <?php if (get_field('mp_list')) { ?>
+                            <?php while (the_repeater_field('mp_list')) : ?>
+                            <?php $material = get_sub_field('list_material'); ?>
+                            <?php $product = get_sub_field('list_product'); ?>
+                            <tr>
+                                <td data-company="<?php the_title(); ?>"><?php the_title(); ?></td>
+                                <td data-material="<?php echo $material->slug; ?>"><?php echo $material->name; ?></td>
+                                <td data-product="<?php echo $product->slug; ?>"><?php echo $product->name; ?></td>
+                            </tr>
+                            <?php endwhile; ?>
+                            <?php }; ?>
+                            <?php endwhile; ?>
                         </tbody>
                     </table>
                 </div>

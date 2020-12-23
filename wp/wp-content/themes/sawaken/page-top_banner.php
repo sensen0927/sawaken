@@ -16,8 +16,6 @@ $parent_slug = get_post($parent_id)->post_name;
             <span><?php echo get_post_meta(get_the_ID(), 'title_top_text', true); ?></span>
         </div>
     </div>
-    <div class="l-container element_top_banner">
-    </div>
 </div>
 
 <div class="l-content">

@@ -4,9 +4,6 @@
     <div class="title_top_banner">
         <span>お知らせ</span>
     </div>
-
-    <div class="l-container element_top_banner">
-    </div>
 </div>
 
 <div class="l-content">
