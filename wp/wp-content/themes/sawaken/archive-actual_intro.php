@@ -33,8 +33,6 @@
 $args = array(
     'post_type' => 'actual_intro',
     'post_status' => 'publish',
-    'orderby' => 'post_date',
-    'order' => 'DESC',
     'posts_per_page'=>-1,
 );
 ?>
@@ -46,7 +44,8 @@ $args = array(
                                 <select id="company_name_select">
                                     <option value="">会社名を選択</option>
 <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-                                    <option value="<?php the_title();?>"><?php the_title();?></option>
+<?php $slug = urldecode($post->post_name); ?>
+                                    <option value="<?php echo $slug;?>"><?php the_title();?></option>
 <?php endwhile; ?>
                                 </select>
                             </li>
@@ -56,7 +55,7 @@ $args = array(
 <?php
     $terms = get_terms('material','hide_empty=0');
     foreach ( $terms as $term ) {
-    echo '<option value="'. esc_html($term->slug).'">' .esc_html($term->name). '</option>';
+    echo '<option value="'. urldecode($term->slug).'">' .esc_html($term->name). '</option>';
     }
 ?>
                                 </select>
@@ -67,7 +66,7 @@ $args = array(
 <?php
     $terms = get_terms('product','hide_empty=0');
     foreach ( $terms as $term ) {
-        echo '<option value="'. esc_html($term->slug).'">' .esc_html($term->name). '</option>';
+        echo '<option value="'. urldecode($term->slug).'">' .esc_html($term->name). '</option>';
     }
 ?>
                                 </select>
@@ -95,10 +94,11 @@ $args = array(
     <?php while(the_repeater_field('mp_list')): ?>
         <?php $material = get_sub_field('list_material'); ?>
         <?php $product = get_sub_field('list_product'); ?>
+        <?php $slug = urldecode($post->post_name); ?>
 <tr>
-    <td data-company="<?php the_title();?>"><?php the_title();?></td>
-    <td data-material="<?php echo $material->slug; ?>"><?php echo $material->name; ?></td>
-    <td data-product="<?php echo $product->slug; ?>"><?php echo $product->name; ?></td>
+    <td data-company="<?php echo $slug;?>"><?php the_title();?></td>
+    <td data-material="<?php echo urldecode($material->slug); ?>"><?php echo $material->name; ?></td>
+    <td data-product="<?php echo urldecode($product->slug); ?>"><?php echo $product->name; ?></td>
 </tr>
     <?php endwhile; ?>
 <?php }; ?>
