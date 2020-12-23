@@ -28,7 +28,7 @@
                         <ul class="top-notice-list">
                             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                             $my_query = new WP_Query(
-                                array('paged' => $paged, 'posts_per_page' => 15, 'post_type' => 'notice')
+                                array('paged' => $paged, 'posts_per_page' => 10, 'post_type' => 'notice')
                             );
                             ?>
                             <?php if ($my_query->have_posts()) :

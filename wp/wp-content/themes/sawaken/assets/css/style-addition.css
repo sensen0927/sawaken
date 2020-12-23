@@ -121,7 +121,8 @@
 .tax-cat_use .top-banner,
 .tax-cat_product .top-banner,
 .single-construction .top-banner,
-.post-type-archive-actual_intro .top-banner {
+.post-type-archive-actual_intro .top-banner,
+.banner-thanks {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -418,5 +419,22 @@ table.search_result td {
 /*top-page*/
 .top-message .message-text {
 	margin-right: 5%;
+}
+/*single**/
+.alignnone {
+	display: block;
+	margin-bottom: 15px;
+}
+.aligncenter {
+	display: block;
+	margin: 0 auto 15px;
+}
+.alignright {
+	float: right;
+	margin: 0 0 15px 10px;
+}
+.alignleft {
+	float: left;
+	margin: 0 10px 15px 0;
 }
 /* END CONSTRUCTION PAGE */
