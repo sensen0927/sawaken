@@ -129,6 +129,9 @@
 .page-title-list-text span:hover:before {
 	color: #0056b3;
 }
+.post-type-archive-construction .page-content {
+	padding-top: 40px;
+}
 /*ページャー*/
 .wp-pagenavi {
 	display: flex;
@@ -333,13 +336,21 @@
 }
 /*recruit*/
 .page-id-32 .item-img {
-	height: auto;
+	height: 320px;
 }
 .page-id-32 .item-img img,
 .page-id-32 .top-content-image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+@media screen and (max-width: 767.98px) {
+	.page-id-32 .item-img {
+		height: 180px;
+	}
+	.page-id-32 .item-title {
+		font-size: 16px;
+	}
 }
 /*reason*/
 .reason {
@@ -378,5 +389,9 @@ table.search_result th {
 table.search_result td {
 	height: 60px;
 	font-size: 18px;
+}
+/*top-page*/
+.top-message .message-text {
+	margin-right: 5%;
 }
 /* END CONSTRUCTION PAGE */
