@@ -36,11 +36,11 @@
     <!--Include CSS Resources-->
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" as="style">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-addition.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/custom_development.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/alpolic.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style-addition.css">
 
     <?php wp_head(); ?>
 </head>
@@ -119,7 +119,7 @@
                         <div class="l-sp__navwrap--item js-accordion">
                             <div class="l-sp__navwrap--item-tit js-accordion-btn">
                                 <a class="l-sp__navwrap--item-tit-ja"
-                                    href="<?php echo home_url(); ?>/construction_example/">施工事例</a>
+                                    href="<?php echo home_url(); ?>/construction/">施工事例</a>
                             </div>
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">

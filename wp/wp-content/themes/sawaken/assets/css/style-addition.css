@@ -146,6 +146,11 @@
 .form-control {
 	background-color: #efefef;
 }
+@media screen and (max-width: 767px) {
+	iframe {
+		margin-bottom: 30px;
+	}
+}
 /*archive singleページ a*/
 .archive a,
 .single a {
@@ -157,6 +162,14 @@
 }
 .post-type-archive-construction .page-content {
 	padding-top: 40px;
+}
+@media screen and (max-width: 767px) {
+	.page-title {
+		margin-top: 50px;
+	}
+	.page-title-list-text span {
+		font-size: 15px;
+	}
 }
 /*ページャー*/
 .wp-pagenavi {
@@ -395,7 +408,7 @@
 	font-size: 1.2rem;
 	text-align: center;
 }
-/*archive post-type-archive post-type-archive-actual_intro logged-in*/
+/*archive post-type-archive-actual_intro*/
 .search_form {
 	margin-top: 15px;
 }
@@ -415,6 +428,39 @@ table.search_result th {
 table.search_result td {
 	height: 60px;
 	font-size: 18px;
+}
+@media screen and (max-width: 767px) {
+	.search_form select {
+		font-size: 13px;
+		width: 260px;
+	}
+	.search_btn button {
+		font-size: 16px;
+		width: 260px;
+	}
+	table.search_result thead {
+		font-weight: 700;
+	}
+	table.search_result tr {
+		border: 2px solid;
+	}
+	table.search_result th {
+		display: inline-block;
+		font-size: 15px;
+		height: 45px;
+		line-height: 45px;
+		width: 100%;
+	}
+	table.search_result td {
+		display: inline-block;
+		font-size: 15px;
+		height: 45px;
+		line-height: 45px;
+		width: 100%;
+	}
+	table.search_result td:first-child {
+		font-weight: 700;
+	}
 }
 /*top-page*/
 .top-message .message-text {
@@ -436,5 +482,18 @@ table.search_result td {
 .alignleft {
 	float: left;
 	margin: 0 10px 15px 0;
+}
+/*company_info*/
+@media screen and (max-width: 767px) {
+	.page-id-24 .message-head {
+		width: 50%;
+		margin-top: 30px;
+	}
+	.page-id-24 .pd-b90 {
+		padding-bottom: 30px !important;
+	}
+	#comme-30th {
+		width: 100%;
+	}
 }
 /* END CONSTRUCTION PAGE */
