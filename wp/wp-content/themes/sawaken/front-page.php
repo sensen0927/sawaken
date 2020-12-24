@@ -192,7 +192,7 @@ Template Name: トップページ
                                     <h3 class="top-product--productitem__tit top-product__tit_after">オフィス</h3>
                                 </div>
                                 <div class="top-product--productitem__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-03.png"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-03.jpg"
                                         class="" data-rjs="2" alt="オフィス">
                                 </div>
                             </a>
@@ -203,7 +203,7 @@ Template Name: トップページ
                                     <h3 class="top-product--productitem__tit top-product__tit_after">集合住宅</h3>
                                 </div>
                                 <div class="top-product--productitem__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-04.png"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-04.jpg"
                                         class="" data-rjs="2" alt="集合住宅">
                                 </div>
                             </a>
@@ -214,7 +214,7 @@ Template Name: トップページ
                                     <h3 class="top-product--productitem__tit top-product__tit_after">医療機関</h3>
                                 </div>
                                 <div class="top-product--productitem__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-05.png"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-05.jpg"
                                         class="" data-rjs="2" alt="医療機関">
                                 </div>
                             </a>
@@ -258,7 +258,7 @@ Template Name: トップページ
                                     <h3 class="top-product--productitem__tit top-product__tit_after">宿泊施設</h3>
                                 </div>
                                 <div class="top-product--productitem__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-08.png"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-08.jpg"
                                         class="" data-rjs="2" alt="宿泊施設">
                                 </div>
                             </a>
@@ -269,7 +269,7 @@ Template Name: トップページ
                                     <h3 class="top-product--productitem__tit top-product__tit_after">商業施設・テナント</h3>
                                 </div>
                                 <div class="top-product--productitem__image">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-07.png"
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/image-07.jpg"
                                         class="" data-rjs="2" alt="商業施設">
                                 </div>
                             </a>

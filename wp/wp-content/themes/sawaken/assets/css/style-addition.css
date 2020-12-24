@@ -67,7 +67,7 @@
 			rgba(0, 0, 0, 0.8) 0,
 			rgba(0, 0, 0, 0.2) 30%
 		),
-		url(../images/company_info/header_top.jpeg);
+		url(../images/company_info/header_top.jpg);
 }
 .banner-development {
 	background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 			rgba(0, 0, 0, 0.8) 0,
 			rgba(0, 0, 0, 0.2) 30%
 		),
-		url(../images/development/background_development.jpeg);
+		url(../images/development/background_development.jpg);
 }
 .banner-chose_reason {
 	background-repeat: no-repeat;
