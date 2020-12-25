@@ -2227,7 +2227,6 @@ body::before {
 		transform: rotate(45deg);
 	}
 }
-/*★追加-----*/
 /*サブメニュー*/
 .sub-nav {
 	transition: opacity 0.3s, transform 0.3s, visibility 0s ease 0.3s;
@@ -2350,7 +2349,6 @@ body::before {
 	top: 13px;
 	left: 10px;
 }
-/*-----★追加*/
 .l-page-header__title {
 	font-size: 36px;
 	font-weight: 700;
@@ -2395,40 +2393,6 @@ body::before {
 	}
 }
 /*
-.top-breadcrumb a:hover {
-	color: #3c93c9 !important;
-}
-.top-breadcrumb {
-	font-size: 18px;
-	font-weight: 100;
-	line-height: 1;
-	margin-top: 25px;
-	margin: 0;
-	padding-top: 25px;
-	list-style: none;
-	padding-left: 35px;
-}
-.top-breadcrumb li {
-	display: inline;
-	list-style: none;
-	font-weight: 700;
-}
-.top-breadcrumb li:after {
-	content: ">";
-	padding: 0 0.2em;
-	color: #000;
-}
-.top-breadcrumb li:first-child:before {
-	content: ">";
-}
-.top-breadcrumb li:last-child:after {
-	content: "";
-}
-.top-breadcrumb li a {
-	text-decoration: none;
-	color: #000;
-	padding-right: 20px;
-}
 .content-breadcrumb a:hover {
 	color: #3c93c9 !important;
 }
@@ -3582,23 +3546,16 @@ table.search_result th {
 	width: 400px;
 }
 table.search_result th {
-	/*height: 104px;
-	font-size: 30px;*/
 	color: #4a4a4a;
-	/*★追加-----*/
 	height: 60px;
 	font-size: 20px;
-	/*-----★追加*/
 	font-family: "メイリオ";
 	background-color: #d6ecff;
 	vertical-align: middle !important;
 	text-align: center;
 }
 table.search_result td {
-	/*height: 70px;*/
-	/*★追加-----*/
 	height: 60px;
-	/*-----★追加*/
 	color: #4a4a4a;
 	font-size: 18px;
 	font-family: "メイリオ";
@@ -3606,22 +3563,14 @@ table.search_result td {
 	padding-left: 48px;
 }
 .search_form {
-	/*margin-top: 100px;*/
-	/*★追加-----*/
 	margin-top: 15px;
-	/*-----★追加*/
 }
-/*★追加-----*/
 .search_btn {
 	margin-top: 60px;
 }
-/*-----★追加*/
 .search_btn button {
 	width: 320px;
-	/*height: 70px;*/
-	/*★追加-----*/
 	height: 50px;
-	/*------★追加*/
 	border: 1px solid #2089c5;
 	color: #2089c5;
 	border-radius: 51px;
@@ -3650,10 +3599,7 @@ table.search_result td {
 	border-radius: 10px;
 	border: 1px solid #707070;
 	color: #4a4a4a;
-	/*font-size: 24px;*/
-	/*★追加-----*/
 	font-size: 18px;
-	/*------★追加*/
 	font-family: "メイリオ";
 	width: 292px;
 	-webkit-appearance: none;
@@ -3689,17 +3635,6 @@ table.search_result td {
 	left: 50%;
 	transform: translateX(-50%);
 }
-/*
-.title_top_company_info {
-	font-size: 23px;
-	color: #fff;
-	position: absolute;
-	top: 40%;
-	transform: translateY(-50%);
-	left: 24%;
-	transform: translateX(-50%);
-}*/
-/*★追加-----*/
 .title_top_employment_info {
 	font-size: 23px;
 	color: #fff;
@@ -3709,7 +3644,6 @@ table.search_result td {
 	left: 18%;
 	transform: translateX(-50%);
 }
-/*-----★追加*/
 .title_top_employ {
 	font-size: 23px;
 	color: #fff;
@@ -3719,18 +3653,6 @@ table.search_result td {
 	left: 18%;
 	transform: translateX(-50%);
 }
-/*
-.title_top_development {
-	font-size: 23px;
-	color: #fff;
-	position: absolute;
-	top: 40%;
-	transform: translateY(-50%);
-	left: 35%;
-	transform: translateX(-50%);
-}
-*/
-/*-----★追加*/
 .title_top_development {
 	font-size: 23px;
 	color: #fff;
@@ -3749,18 +3671,6 @@ table.search_result td {
 	left: 9%;
 	transform: translateX(-50%);
 }
-/*-----★追加*/
-/*
-.title_top_chose {
-	font-size: 23px;
-	color: #fff;
-	position: absolute;
-	top: 40%;
-	transform: translateY(-50%);
-	left: 9%;
-	transform: translateX(-50%);
-}*/
-/*★追加-----*/
 .banner-contact_us,
 .banner-site_map,
 .banner-privacy_policy,
@@ -3792,13 +3702,11 @@ table.search_result td {
 		),
 		url(../images/common/main-img2.jpg);
 }
-/*-----★追加*/
 @media screen and (max-width: 767px) {
 	.title_top_banner {
 		font-size: 20px;
 		font-weight: 200;
 	}
-	/*★追加-----*/
 	.title_top_company_info {
 		font-size: 20px;
 		left: 35%;
@@ -3812,52 +3720,18 @@ table.search_result td {
 		font-size: 20px;
 		left: 12%;
 	}
-	/*-----★追加*/
-	/*
-	.title_top_development {
-		font-size: 20px;
-		top: 20%;
-		left: 35%;
-	}*/
-
-	/*
-	.title_top_chose {
-		font-size: 20px;
-		left: 12%;
-	}*/
-
-	/*
-	.title_top_employ {
-		font-size: 20px;
-		left: 27%;
-	}*/
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 27%;
 	}
 }
 @media screen and (max-width: 650px) {
-	/*.title_top_employ {
-		font-size: 20px;
-		left: 30%;
-	}*/
-	/*★追加----*/
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 30%;
 	}
-	/*-----★追加*/
 }
 @media screen and (max-width: 570px) {
-	/*.title_top_chose {
-		font-size: 20px;
-		left: 20%;
-	}
-	.title_top_employ {
-		font-size: 20px;
-		left: 38%;
-	}*/
-	/*★追加----*/
 	.title_top_chose_reason {
 		font-size: 20px;
 		left: 20%;
@@ -3866,18 +3740,7 @@ table.search_result td {
 		font-size: 20px;
 		left: 38%;
 	}
-	/*-----★追加*/
 }
-/*
-.element_top_banner {
-	height: 50px;
-	position: absolute;
-	bottom: 0;
-	background-color: #ff7575;
-	left: 50%;
-	transform: translateX(-50%);
-}
-*/
 .l-main-common {
 	max-width: 1700px;
 	width: 100%;
@@ -3899,12 +3762,10 @@ table.search_result td {
 	padding-top: 43px;
 	margin-top: 0;
 }
-/*★追加-----*/
 .bread a,
 .bread span {
 	color: black;
 }
-/*-----★追加*/
 .page-title {
 	margin-left: 97px;
 	margin-top: 50px;
@@ -3972,9 +3833,7 @@ table.search_result td {
 		margin-top: 30px;
 	}
 	.page-title {
-		/*★追加-----*/
 		margin-top: 50px;
-		/*-----★追加*/
 		margin-left: 30px;
 	}
 	.page-title-span {
@@ -3984,11 +3843,9 @@ table.search_result td {
 		margin-top: 20px;
 		margin-left: 0;
 	}
-	/*★追加-----*/
 	.page-title-list-text span {
 		font-size: 15px;
 	}
-	/*-----★追加*/
 	.page-content {
 		padding: 10px 10px 80px 10px !important;
 	}
@@ -4002,44 +3859,30 @@ table.search_result td {
 		height: 250px;
 		font-size: 40px;
 	}
-	/*★追加-----*/
 	table.search_result thead {
 		font-weight: 700;
 	}
 	table.search_result tr {
 		border: 2px solid;
 	}
-	/*-----★追加*/
 	table.search_result th {
-		/*height: 60px;
-		font-size: 18px;
-		vertical-align: middle !important;*/
-		/*★追加-----*/
 		display: inline-block;
 		font-size: 15px;
 		height: 45px;
 		line-height: 45px;
 		width: 100%;
-		/*-----★追加*/
 	}
 	table.search_result td {
-		/*height: 50px;
-		font-size: 13px;
-		vertical-align: middle;*/
-		/*★追加-----*/
 		padding-left: 15px;
 		display: inline-block;
 		font-size: 15px;
 		height: 45px;
 		line-height: 45px;
 		width: 100%;
-		/*-----★追加*/
 	}
-	/*★追加-----*/
 	table.search_result td:first-child {
 		font-weight: 700;
 	}
-	/*-----★追加*/
 	.search_form .company_name {
 		padding-bottom: 10px;
 		font-size: 18px;
@@ -4054,12 +3897,8 @@ table.search_result td {
 	.search_form select {
 		height: 45px;
 		border-radius: 10px;
-		/*font-size: 18px;
-		width: 292px;*/
-		/*★追加-----*/
 		font-size: 13px;
 		width: 260px;
-		/*------★追加*/
 		padding-left: 10px;
 	}
 	.search_form {
@@ -4069,13 +3908,8 @@ table.search_result td {
 		margin-top: 20px;
 	}
 	.search_btn button {
-		/*width: 292px;
-		font-size: 24px;
-		height: 60px;*/
-		/*★追加-----*/
 		font-size: 16px;
 		width: 260px;
-		/*-----★追加*/
 	}
 	.table-first-info th {
 		font-size: 14px !important;
@@ -4158,9 +3992,7 @@ table.search_result td {
 }
 .top-message .message-text {
 	margin-bottom: 33px;
-	/*★追加-----*/
 	margin-right: 5%;
-	/*-----★追加*/
 }
 .top-message .message-head {
 	position: absolute;
@@ -4180,26 +4012,18 @@ table.search_result td {
 	}
 	.message-head {
 		font-size: 20px !important;
-		/*margin-top: 20px;*/
-		/*★追加-----*/
 		margin-top: 30px;
 		width: 50%;
-		/*-----★追加*/
 	}
 	#comme-30th {
-		/*width: 80%;*/
-		/*★追加-----*/
 		width: 100%;
-		/*-----★追加*/
 	}
 	.top-message td img {
 		width: 50%;
 	}
-	/*★追加-----*/
 	.page-id-24 .pd-b90 {
 		padding-bottom: 30px !important;
 	}
-	/*-----★追加*/
 }
 .company-mission th.mission-text {
 	padding-left: 0;
@@ -4306,21 +4130,6 @@ table.search_result td {
 	content: " \00B7";
 	margin-right: 10px;
 }
-/*
-.banner-company-info {
-	height: 500px !important;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: linear-gradient(
-			135deg,
-			rgba(0, 0, 0, 0.8) 0,
-			rgba(0, 0, 0, 0.2) 30%
-		),
-		url(../images/company_info/header_top.jpeg);
-}
-*/
-/*★追加-----*/
 .banner-company_info {
 	height: 500px !important;
 	background-repeat: no-repeat;
@@ -4333,24 +4142,9 @@ table.search_result td {
 		),
 		url(../images/company_info/header_top.jpg);
 }
-/*-----★追加*/
 .text-banner-line {
 	margin-left: 50px;
 }
-/*
-.development_banner {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: linear-gradient(
-			135deg,
-			rgba(0, 0, 0, 0.8) 0,
-			rgba(0, 0, 0, 0.2) 30%
-		),
-		url(../images/development/background_development.jpeg);
-}
-*/
-/*★追加-----*/
 .banner-development {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -4362,7 +4156,6 @@ table.search_result td {
 		),
 		url(../images/development/background_development.jpg);
 }
-/*-----★追加*/
 .top-banner {
 	height: 500px;
 	position: relative;
@@ -4419,9 +4212,6 @@ table.search_result td {
 .blue-box img {
 	filter: brightness(70%);
 }
-/*@media screen and (max-width:767px){
-
-}*/
 .box-item-development img {
 	width: 100%;
 	max-height: 200px !important;
@@ -4437,19 +4227,6 @@ table.search_result td {
 		font-size: 24px;
 	}
 }
-/*
-.chose_reason_banner {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: linear-gradient(
-			135deg,
-			rgba(0, 0, 0, 0.8) 0,
-			rgba(0, 0, 0, 0.2) 30%
-		),
-		url(../images/top/image-01.jpg);
-}*/
-/*★追加-----*/
 .banner-chose_reason {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -4461,21 +4238,6 @@ table.search_result td {
 		),
 		url(../images/top/image-01.jpg);
 }
-/*-----★追加*/
-/*
-.chose_reason_content_box {
-	margin-left: 70px;
-}
-.chose_reason_content {
-	padding-bottom: 100px;
-	font-size: 20px;
-}
-.chose_reason_content_box ul {
-	list-style: inside;
-	margin-left: 10px;
-}
-*/
-/*★追加-----*/
 .reason {
 	margin: 50px auto;
 }
@@ -4492,7 +4254,6 @@ table.search_result td {
 	font-size: 1.2rem;
 	text-align: center;
 }
-/*-----★追加*/
 @media screen and (max-width: 767px) {
 	.chose_reason_content_box {
 		margin-left: 0;
@@ -4759,22 +4520,7 @@ table.search_result td {
 .top-banner {
 	height: 500px;
 	position: relative;
-	/*background-color: #FFCBCB;*/
 }
-/*
-.banner-employ-info {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-image: linear-gradient(
-			135deg,
-			rgba(0, 0, 0, 0.8) 0,
-			rgba(0, 0, 0, 0.2) 30%
-		),
-		url(../images/employment_info/employment_info.jpeg);
-}
-*/
-/*★追加-----*/
 .banner-employment_info {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -4786,7 +4532,6 @@ table.search_result td {
 		),
 		url(../images/recruit/main-img.jpg);
 }
-/*-----★追加*/
 .top-text-banner {
 	position: absolute;
 	top: 50%;
@@ -4807,8 +4552,6 @@ table.search_result td {
 	justify-content: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	/* width: 90%;
-  */
 }
 /* End DEVELOPMENT PAGE */
 /* Begin CONSTRUCTION PAGE */
@@ -4854,14 +4597,12 @@ table.search_result td {
 .pb-100 {
 	padding-bottom: 100px;
 }
-/*★追加-----*/
 .page-title-list-text span:hover:before {
 	color: #0056b3;
 }
 .post-type-archive-construction .page-content {
 	padding-top: 40px;
 }
-/*-----★追加*/
 @media screen and (max-width: 767.98px) {
 	.page-title-list-wrapper {
 		display: grid;
@@ -4973,7 +4714,6 @@ table.search_result td {
 		),
 		url(../images/alpolic/sw0033.png);
 }
-/*★追加-----*/
 .title_top_alpolic {
 	position: absolute;
 	top: 65%;
@@ -4994,36 +4734,6 @@ table.search_result td {
 	color: white;
 	line-height: 1.2;
 }
-/*-----★追加*/
-/*
-.title-top-alpolic {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	text-align: center;
-}
-.title-top-alpolic h4 {
-	font-size: 64px;
-	font-weight: bold;
-	color: white;
-}
-.description-top-alpolic {
-	position: absolute;
-	bottom: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	bottom: 30px;
-	text-align: center;
-}
-.description-top-alpolic h5 {
-	font-size: 32px;
-	font-weight: bold;
-	color: white;
-}
-*/
 .list-section {
 	display: grid;
 	grid-template-columns: repeat(5, 1fr);
@@ -5046,9 +4756,6 @@ table.search_result td {
 .item-text a:hover {
 	color: #000;
 }
-/*.item-text:hover, .item-text:focus {
-  cursor: pointer;
-}*/
 .item-text::after {
 	position: absolute;
 	top: 50%;
@@ -5062,9 +4769,6 @@ table.search_result td {
 	border-right: 0.2em solid #3c93c9;
 	border-top: 0.2em solid #3c93c9;
 	transform: rotate(135deg);
-}
-.item-text:hover {
-	/*top: -10px;*/
 }
 .border-confirm {
 	border-radius: 5px;
@@ -5284,14 +4988,12 @@ table.search_result td {
 	color: rgb(1, 1, 1);
 	line-height: 1.813;
 }
-/*★追加-----*/
 .page-id-42 .element {
 	display: none;
 }
 .page-id-42 input[type="submit"] {
 	background-color: #3c93c9;
 }
-/*-----★追加*/
 @media screen and (max-width: 767.98px) {
 	.contact-image {
 		max-width: 30%;
@@ -5299,10 +5001,7 @@ table.search_result td {
 	.alpolic_button {
 		color: #fff;
 		margin-top: 21px;
-		/*width: 260px;*/
-		/*★追加-----*/
 		width: 100%;
-		/*-----★追加*/
 		z-index: 999999;
 		height: 100px;
 	}
@@ -5311,7 +5010,6 @@ table.search_result td {
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1em;
 		grid-auto-rows: minmax(3rem, auto);
-		/* padding-left: 1rem; */
 	}
 	.step-box {
 		text-align: left;
@@ -5319,25 +5017,12 @@ table.search_result td {
 	.step-title {
 		flex-direction: column;
 	}
-	/*★追加-----*/
 	.title_top_alpolic h4 {
 		font-size: 41px;
 	}
 	.title_top_alpolic p {
 		font-size: 18px;
 	}
-	/*-----★追加*/
-	/*
-	.title-top-alpolic h4 {
-		font-size: 30px;
-	}
-	.description-top-alpolic {
-		bottom: 120px;
-	}
-	.description-top-alpolic h5 {
-		font-size: 16px;
-	}
-	*/
 	.section-info h3 {
 		font-size: 30px;
 		font-weight: bold;
@@ -5345,21 +5030,12 @@ table.search_result td {
 	.two-image {
 		padding-top: 3rem;
 	}
-	/*★追加-----*/
 	.item-text {
 		font-size: 13px;
 	}
-	/*------★追加*/
-	/* .support-online {
-    position: fixed;
-    z-index: 999;
-    right: 20px;
-    bottom: 40px;
-  } */
 }
 /* END ALPOLIC PAGE */
 /* Begin EMPLOYMENT_INFO PAGE */
-/*★追加-----*/
 .page-id-32 .item-img {
 	height: 320px;
 }
@@ -5433,4 +5109,3 @@ table.search_result td {
 		margin-left: 0;
 	}
 }
-/*-----★追加*/
