@@ -1,4 +1,5 @@
 /*固定ページメインビジュアル*/
+/*
 .title_top_employment_info {
 	font-size: 23px;
 	color: #fff;
@@ -8,6 +9,7 @@
 	left: 18%;
 	transform: translateX(-50%);
 }
+
 .title_top_development {
 	font-size: 23px;
 	color: #fff;
@@ -25,9 +27,9 @@
 	transform: translateY(-50%);
 	left: 9%;
 	transform: translateX(-50%);
-}
+}*/
 @media screen and (max-width: 767px) {
-	.title_top_development {
+	/*.title_top_development {
 		font-size: 20px;
 		top: 20%;
 		left: 35%;
@@ -35,28 +37,32 @@
 	.title_top_chose_reason {
 		font-size: 20px;
 		left: 12%;
-	}
+	}*/
+	/*
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 27%;
-	}
+	}*/
 }
 @media screen and (max-width: 650px) {
+	/*
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 30%;
-	}
+	}*/
 }
 @media screen and (max-width: 570px) {
-	.title_top_chose_reason {
+	/*.title_top_chose_reason {
 		font-size: 20px;
 		left: 20%;
-	}
+	}*/
+	/*
 	.title_top_employment_info {
 		font-size: 20px;
 		left: 38%;
-	}
+	}*/
 }
+/*
 .banner-company_info {
 	height: 500px !important;
 	background-repeat: no-repeat;
@@ -68,7 +74,8 @@
 			rgba(0, 0, 0, 0.2) 30%
 		),
 		url(../images/company_info/header_top.jpg);
-}
+}*/
+/*
 .banner-development {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -80,6 +87,8 @@
 		),
 		url(../images/development/background_development.jpg);
 }
+*/
+/*
 .banner-chose_reason {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -91,6 +100,8 @@
 		),
 		url(../images/top/image-01.jpg);
 }
+*/
+/*
 .banner-contact_us,
 .banner-site_map,
 .banner-privacy_policy,
@@ -105,7 +116,8 @@
 			rgba(0, 0, 0, 0.2) 30%
 		),
 		url(../images/common/main-img.jpg);
-}
+}*/
+/*
 .banner-employment_info {
 	background-repeat: no-repeat;
 	background-position: center;
@@ -117,6 +129,8 @@
 		),
 		url(../images/recruit/main-img.jpg);
 }
+*/
+/*
 .post-type-archive-construction .top-banner,
 .tax-cat_use .top-banner,
 .tax-cat_product .top-banner,
@@ -132,9 +146,9 @@
 			rgba(0, 0, 0, 0.2) 30%
 		),
 		url(../images/common/main-img2.jpg);
-}
+}*/
 /*パンくず*/
-.bread {
+/*.bread {
 	padding-top: 43px;
 	margin-top: 0;
 }
@@ -142,7 +156,9 @@
 .bread span {
 	color: black;
 }
+*/
 /*form*/
+/*
 .form-control {
 	background-color: #efefef;
 }
@@ -151,18 +167,22 @@
 		margin-bottom: 30px;
 	}
 }
+*/
 /*archive singleページ a*/
+/*
 .archive a,
 .single a {
 	color: black;
-}
+}*/
 /*construction*/
+/*
 .page-title-list-text span:hover:before {
 	color: #0056b3;
 }
 .post-type-archive-construction .page-content {
 	padding-top: 40px;
-}
+}*/
+/*
 @media screen and (max-width: 767px) {
 	.page-title {
 		margin-top: 50px;
@@ -171,7 +191,9 @@
 		font-size: 15px;
 	}
 }
+*/
 /*ページャー*/
+/*
 .wp-pagenavi {
 	display: flex;
 }
@@ -204,7 +226,9 @@
 		margin-left: 0;
 	}
 }
+*/
 /*サブメニュー*/
+/*
 .sub-nav {
 	transition: opacity 0.3s, transform 0.3s, visibility 0s ease 0.3s;
 	position: absolute;
@@ -326,8 +350,9 @@
 	top: 13px;
 	left: 10px;
 }
-
+*/
 /*alpolic*/
+/*
 .banner-alpolic {
 }
 .title_top_alpolic {
@@ -350,30 +375,40 @@
 	color: white;
 	line-height: 1.2;
 }
+*/
+/*
 .banner-alpolic > .element_top_banner {
 	display: none;
 }
+*/
+/*
 .page-id-42 .element {
 	display: none;
 }
 .page-id-42 input[type="submit"] {
 	background-color: #3c93c9;
-}
+}*/
 @media screen and (max-width: 767.98px) {
-	.title_top_alpolic h4 {
+	/*.title_top_alpolic h4 {
 		font-size: 41px;
 	}
 	.title_top_alpolic p {
 		font-size: 18px;
 	}
+	*/
+	/*
 	.alpolic_button {
 		width: 100%;
 	}
+	*/
+	/*
 	.page-id-42 .item-text {
 		font-size: 13px;
 	}
+	*/
 }
 /*recruit*/
+/*
 .page-id-32 .item-img {
 	height: 320px;
 }
@@ -391,7 +426,9 @@
 		font-size: 16px;
 	}
 }
+*/
 /*reason*/
+/*
 .reason {
 	margin: 50px auto;
 }
@@ -408,13 +445,15 @@
 	font-size: 1.2rem;
 	text-align: center;
 }
+*/
 /*archive post-type-archive-actual_intro*/
-.search_form {
+/*.search_form {
 	margin-top: 15px;
 }
 .search_form select {
 	font-size: 18px;
-}
+}*/
+/*
 .search_btn {
 	margin-top: 60px;
 }
@@ -428,12 +467,13 @@ table.search_result th {
 table.search_result td {
 	height: 60px;
 	font-size: 18px;
-}
+}*/
 @media screen and (max-width: 767px) {
-	.search_form select {
+	/*.search_form select {
 		font-size: 13px;
 		width: 260px;
-	}
+	}*/
+	/*
 	.search_btn button {
 		font-size: 16px;
 		width: 260px;
@@ -460,13 +500,15 @@ table.search_result td {
 	}
 	table.search_result td:first-child {
 		font-weight: 700;
-	}
+	}*/
 }
 /*top-page*/
+/*
 .top-message .message-text {
 	margin-right: 5%;
-}
+}*/
 /*single**/
+/*
 .alignnone {
 	display: block;
 	margin-bottom: 15px;
@@ -482,9 +524,10 @@ table.search_result td {
 .alignleft {
 	float: left;
 	margin: 0 10px 15px 0;
-}
+}*/
 /*company_info*/
 @media screen and (max-width: 767px) {
+	/*
 	.page-id-24 .message-head {
 		width: 50%;
 		margin-top: 30px;
@@ -494,6 +537,6 @@ table.search_result td {
 	}
 	#comme-30th {
 		width: 100%;
-	}
+	}*/
 }
 /* END CONSTRUCTION PAGE */
