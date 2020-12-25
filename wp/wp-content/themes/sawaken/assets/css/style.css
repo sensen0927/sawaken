@@ -4480,3 +4480,430 @@ table.search_result td {
 	}
 }
 /* END CONSTRUCTION PAGE */
+/* Begin CUSTOM_DEVELOPMENT PAGE */
+.business_box .box-content {
+	padding-left: 65px;
+}
+.business_box .box-content .page-title {
+	margin-left: 0px;
+}
+.item-list-title {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.item-list-title::before {
+	content: "◆";
+}
+.item-list-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 18px;
+}
+.bg-img-load {
+	background-image: url(../images/development/haikei.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.item-list-grid .item-l {
+	border: 1px solid;
+	height: 240px;
+	padding: 40px 147px 25px 40px;
+}
+.item-list-grid .item-l .item-content-l {
+	height: 100%;
+	position: relative;
+	font-size: 16px;
+}
+.item-list-grid .item-l .item-title {
+	color: #2089c5;
+	font-weight: bold;
+}
+.item-list-grid .item-l .item-content {
+	margin-top: 30px;
+}
+.item-list-grid .item-l .item-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.item-list-grid .item-l .item-link a {
+	text-decoration: underline !important;
+	color: #000000;
+}
+.item-list-grid .item-l .item-link a::before {
+	content: ">>";
+}
+@media screen and (max-width: 767px) {
+	.business_box .box-content {
+		padding-left: 0px !important;
+	}
+	.business_box .box-content .page-title {
+		margin-left: 30px !important;
+	}
+	.business_box .box-content .box-content-col {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.business_box .box-content .box-content-text {
+		padding-left: 15px;
+	}
+	.item-list-grid {
+		grid-template-columns: none !important;
+		grid-gap: 50px !important;
+	}
+	.item-list-grid .item-l {
+		padding: 30px 30px 25px 40px;
+	}
+	.bg-img-load {
+		background: none;
+	}
+}
+/* END CUSTOM_DEVELOPMENT PAGE */
+/* Begin ALPOLIC PAGE */
+.banner-alpolic {
+	height: 500px !important;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-image: linear-gradient(
+			135deg,
+			rgba(0, 0, 0, 0.8) 0,
+			rgba(0, 0, 0, 0.5) 30%
+		),
+		url(../images/alpolic/sw0033.png);
+}
+.title-top-alpolic {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.title-top-alpolic h4 {
+	font-size: 64px;
+	font-weight: bold;
+	color: white;
+}
+.description-top-alpolic {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	bottom: 30px;
+	text-align: center;
+}
+.description-top-alpolic h5 {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+}
+.list-section {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 1em;
+	grid-auto-rows: minmax(2rem, auto);
+}
+.item-section:hover,
+.item-section:focus {
+	/*cursor: pointer;*/
+}
+.item-text {
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	transition: top ease 1s;
+}
+.item-text a {
+	color: #000;
+}
+.item-text a:hover {
+	color: #000;
+}
+/*.item-text:hover, .item-text:focus {
+  cursor: pointer;
+}*/
+.item-text::after {
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	top: 25px;
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-right: 0.2em solid #3c93c9;
+	border-top: 0.2em solid #3c93c9;
+	transform: rotate(135deg);
+}
+.item-text:hover {
+	/*top: -10px;*/
+}
+.border-confirm {
+	border-radius: 5px;
+}
+.alpolic-form label {
+	font-size: 18px;
+}
+.alpolic-form .form-control {
+	font-size: 1.5rem;
+}
+.form-group.required .col-form-label:after {
+	content: "*";
+	color: red;
+}
+.section-info h3 {
+	font-size: 48px;
+	font-weight: bold;
+}
+.section-info p {
+	font-size: 14px;
+	color: #3c93c9;
+	font-weight: bold;
+}
+.form-description {
+	font-size: 16px;
+	line-height: 30px;
+}
+.step-title .st-right {
+	font-size: 24px;
+	font-weight: bold;
+}
+.step-title .st-left {
+	font-size: 22px;
+	font-weight: bold;
+	padding-right: 1rem;
+}
+.st-left {
+	color: #fff;
+	width: 150px;
+	margin-right: 20px;
+	text-align: center;
+}
+.step-content {
+	font-size: 16px;
+	font-weight: bold;
+}
+.section-end-text p {
+	font-size: 16px;
+	font-weight: bold;
+}
+.bottom-image {
+	width: 100%;
+	height: auto;
+}
+.single-product,
+.item-product,
+.aa-instruction {
+	display: flex;
+	margin-right: -15px !important;
+	margin-left: -15px !important;
+}
+.single-product img,
+.processing-cover,
+.aa-instruction-image img,
+.bottom-image,
+.surface img,
+.color-pallete img,
+.item-product .ip-image,
+.flow img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+.single-product h4 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.list-product .single-product:not(:first-child) {
+	padding-top: 2rem;
+}
+.aa-instruction-text p {
+	line-height: 30px;
+}
+.about-paragraph::before {
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	background: #2089c5;
+	bottom: 10px;
+	left: 10px;
+	content: "";
+}
+.alpolic-banner-image {
+	position: relative;
+}
+.contact-image {
+	max-width: 12%;
+	position: fixed;
+	z-index: 999999;
+	right: 20px;
+	bottom: 40px;
+}
+@font-face {
+	src: url("../font/yogothib.ttf");
+	font-family: YuGo;
+}
+.contact-title {
+	font-weight: 600;
+}
+.item-product img {
+	height: max-content;
+	margin-top: 10px;
+}
+.alpolic_button {
+	color: #fff !important;
+	margin-top: 21px;
+	width: 300px;
+	z-index: 999999;
+	height: 100px;
+}
+.main-flow {
+	background-color: #e2f1fa;
+}
+.col-no-padding {
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+.about-paragraph {
+	font-size: 24px;
+	font-weight: 600;
+}
+.about-product {
+	font-size: 24px;
+	font-weight: 600;
+	position: relative;
+}
+.about-product::after {
+	position: absolute;
+	content: "";
+	bottom: -15px;
+	left: 0px;
+	background-color: #2089c5;
+	width: 25%;
+	height: 2px;
+}
+.about-surface {
+	font-size: 24px;
+	font-weight: 600;
+	position: relative;
+}
+.about-surface::after {
+	position: absolute;
+	content: "";
+	bottom: -5px;
+	left: 0px;
+	background-color: #2089c5;
+	width: 25%;
+	height: 2px;
+}
+.about-pallete {
+	font-size: 24px;
+	font-weight: 600;
+	position: relative;
+}
+.about-pallete::after {
+	position: absolute;
+	content: "";
+	bottom: -5px;
+	left: 0px;
+	background-color: #2089c5;
+	width: 15%;
+	height: 2px;
+}
+.alpolic-content-text {
+	background-color: #fbfbfb;
+	font-size: 16px;
+	font-weight: 600;
+	transition: top ease 1s;
+	line-height: 1.5;
+	margin-bottom: 50px;
+}
+.alpolic-content-title {
+	line-height: 1.5;
+}
+.panel-title {
+	font-size: 24px;
+	font-weight: 600;
+	position: relative;
+}
+.panel-title::before {
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	background: #2089c5;
+	bottom: 10px;
+	left: 0px;
+	content: "";
+}
+.form-description {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 2;
+}
+.item-product-title {
+	font-weight: 600;
+	line-height: 2;
+}
+.ip-description {
+	font-weight: 600;
+	font-size: 16px;
+	color: rgb(1, 1, 1);
+	line-height: 1.813;
+}
+.single-product-description {
+	font-weight: 600;
+	font-size: 16px;
+	color: rgb(1, 1, 1);
+	line-height: 1.813;
+}
+@media screen and (max-width: 767.98px) {
+	.contact-image {
+		max-width: 30%;
+	}
+	.alpolic_button {
+		color: #fff;
+		margin-top: 21px;
+		width: 260px;
+		z-index: 999999;
+		height: 100px;
+	}
+	.list-section {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+		grid-auto-rows: minmax(3rem, auto);
+		/* padding-left: 1rem; */
+	}
+	.step-box {
+		text-align: left;
+	}
+	.step-title {
+		flex-direction: column;
+	}
+	.title-top-alpolic h4 {
+		font-size: 30px;
+	}
+	.description-top-alpolic {
+		bottom: 120px;
+	}
+	.description-top-alpolic h5 {
+		font-size: 16px;
+	}
+	.section-info h3 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.two-image {
+		padding-top: 3rem;
+	}
+	/* .support-online {
+    position: fixed;
+    z-index: 999;
+    right: 20px;
+    bottom: 40px;
+  } */
+}
+/* END ALPOLIC PAGE */
