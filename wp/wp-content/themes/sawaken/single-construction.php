@@ -4,11 +4,13 @@
 ?>
 <?php while (have_posts()) : the_post(); //繰り返し処理開始
     ?>
+<!--
 <div class="top-banner">
     <div class="title_top_banner">
         <span>施工事例</span>
     </div>
 </div>
+-->
 <div class="l-content">
     <div class="element"></div>
     <main class="l-main-common">

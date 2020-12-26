@@ -4710,16 +4710,22 @@ table.search_result td {
 .page-content-product .item-l .item-content-l .item-content {
 	margin: 10px 90px;
 }
-/*
+.page-content-product .item-l .img-box {
+	overflow: hidden;
+}
 .page-content-product .item-l .item-img {
 	height: 200px;
 	width: 100%;
 }
-*/
 .page-content-product .item-l .item-img img {
 	height: 200px;
 	width: 100%;
 	object-fit: cover;
+}
+.page-content-product .item-l .item-img img:hover {
+	filter: brightness(100%);
+	transform: scale(1.1);
+	transition: transform 1s;
 }
 @media screen and (max-width: 767px) {
 	.business_box .box-content {
