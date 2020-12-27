@@ -122,7 +122,7 @@ Template Name: トップページ
                     </p>
                     <p>
                         <a class="top-hero__txtarea--link c-btn c-btn__border bg-blank c-btn__chose"
-                            href="<?php echo home_url(); ?>/chose_reason/">
+                            href="<?php echo home_url(); ?>/company_info/chose_reason/">
                             <span>詳細を見る</span>
                         </a>
                     </p>
@@ -130,7 +130,8 @@ Template Name: トップページ
                 <div class="col-md-7 top-chose_content_box_right">
                     <ul class="top-strong-list">
                         <li class="top-strong-items">
-                            <a href="<?php echo home_url(); ?>/chose_reason/" class="top-strong-items-link">
+                            <a href="<?php echo home_url(); ?>/company_info/chose_reason/"
+                                class="top-strong-items-link">
                                 <div class="row top-strong-items-link-box">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/title-01.png"
                                         class="top-strong_img">
@@ -139,7 +140,8 @@ Template Name: トップページ
                             </a>
                         </li>
                         <li class="top-strong-items">
-                            <a href="<?php echo home_url(); ?>/chose_reason/" class="top-strong-items-link">
+                            <a href="<?php echo home_url(); ?>/company_info/chose_reason/"
+                                class="top-strong-items-link">
                                 <div class="row top-strong-items-link-box">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/title-02.png"
                                         class="top-strong_img">
@@ -148,7 +150,8 @@ Template Name: トップページ
                             </a>
                         </li>
                         <li class="top-strong-items">
-                            <a href="<?php echo home_url(); ?>/chose_reason/" class="top-strong-items-link">
+                            <a href="<?php echo home_url(); ?>/company_info/chose_reason/"
+                                class="top-strong-items-link">
                                 <div class="row top-strong-items-link-box">
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/top/title-03.png"
                                         class="top-strong_img">

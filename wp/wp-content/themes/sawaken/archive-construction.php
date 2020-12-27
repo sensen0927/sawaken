@@ -24,7 +24,7 @@
                     <?php endif; ?>
                 </div>
                 <div class="page-title">
-                    <span class="page-title-span">建築用途</span>
+                    <span class="page-title-span">建築用途から探す</span>
                     <div class="page-title-list page-title-list-wrapper">
                         <?php
                         $terms = get_terms('cat_use', 'hide_empty=0');
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <div class="page-title">
-                    <span class="page-title-span">製品</span>
+                    <span class="page-title-span">製品から探す</span>
                     <div class="page-title-list page-title-list-wrapper">
                         <?php
                         $terms = get_terms('cat_product', 'hide_empty=0');
