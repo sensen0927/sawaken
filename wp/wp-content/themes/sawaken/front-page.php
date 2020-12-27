@@ -37,13 +37,13 @@ Template Name: トップページ
                                 <!-- #キャッチコピー -->
                                 <div class="l-container">
                                     <div class="row">
-                                        <div class="top-hero__txtarea col-md-8 col-sm-12">
+                                        <div class="top-hero__txtarea col-12">
                                             <div class="top-page__main-visual inview">
                                                 <div class="txt txt02"><span>技術と誠意で飛躍する</span></div>
                                                 <div class="txt txt03"><span>沢建商株式会社</span></div>
                                             </div>
                                         </div>
-                                        <div class="top-hero__txtarea col-md-4 col-sm-12 button_extra_div_sp">
+                                        <div class="top-hero__txtarea col-12 button_extra_div_sp">
                                             <a class="top-hero__txtarea--link c-btn c-btn__border bg-blank button_extra"
                                                 href="<?php echo home_url(); ?>/company_info/"><span>企業情報</span></a>
                                         </div>
@@ -166,7 +166,7 @@ Template Name: トップページ
             <div class="l-container">
                 <div class="row">
                     <div class="col-md-4 offset-md-4 top-alpolic_content_box">
-                        <h3 class="top-alpolic_title_jp">ALPOLIC</h3>
+                        <h3 class="top-alpolic_title_jp">ALPOLIC<span class="r">&reg;</span></h3>
                         <h5 class="top-alpolic_title_en">アルポリック</h5>
                         <p class="top-alpolic_content">自社専門工場で加工</p>
                         <div class="top-alpolic-view-detail">

@@ -510,7 +510,7 @@ input::-ms-clear {
 	border-color: #0371c7;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-	right: 20px;
+	right: 0;
 	position: absolute;
 	top: calc(50% - 4px);
 	-webkit-transition: all 250ms;
@@ -686,8 +686,35 @@ input::-ms-clear {
 	transform: rotate(135deg);
 	left: 23px;
 }
+.c-btn__chose {
+	background-color: #0b0cdb;
+}
 .c-btn__chose span {
 	color: #fff;
+}
+.c-btn__chose span:before {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		from(#ffd900),
+		to(#ffd900)
+	);
+	background-image: linear-gradient(90deg, #ffd900 0, #ffd900 100%);
+	position: absolute;
+	left: -1px;
+	top: 0;
+	-webkit-transition: width 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+	transition: width 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+	height: 100%;
+	width: 0%;
+	z-index: -1;
 }
 @media screen and (max-width: 767px) {
 	.c-btn__chose {
@@ -855,6 +882,9 @@ body {
 body::before {
 	content: "lg";
 	display: none;
+}
+body.home {
+	letter-spacing: 3px;
 }
 @media screen and (max-width: 767px) {
 	body::before {
@@ -2646,6 +2676,10 @@ body::before {
 	text-align: center;
 	background-color: rgba(0, 0, 0, 0.4);
 }
+span.r {
+	font-size: 60%;
+	vertical-align: text-top;
+}
 @media screen and (max-width: 767px) {
 	.top-alpolic {
 		height: 330px;
@@ -2723,6 +2757,7 @@ body::before {
 	left: 20px;
 	display: block;
 	background: #fff;
+	opacity: 50%;
 }
 .top-page__main-visual .txt.txt01 {
 	-webkit-transition: opacity 1s ease 0s, color 1s ease 0.5s,
@@ -2757,7 +2792,9 @@ body::before {
 		transition: opacity 1s ease 0.3s, transform 1s ease 0.3s, color 1s ease 0.8s;
 		transition: opacity 1s ease 0.3s, transform 1s ease 0.3s, color 1s ease 0.8s,
 			-webkit-transform 1s ease 0.3s;
-		top: calc(50% + 0px);
+		position: absolute;
+		top: -120px;
+		right: 35px;
 	}
 	.top-page__main-visual .txt.txt02::before {
 		-webkit-transition: width 1s ease 0.6s;
@@ -2774,7 +2811,9 @@ body::before {
 		transition: opacity 1s ease 0.3s, transform 1s ease 0.3s, color 1s ease 0.8s;
 		transition: opacity 1s ease 0.3s, transform 1s ease 0.3s, color 1s ease 0.8s,
 			-webkit-transform 1s ease 0.3s;
-		top: calc(50% + 100px);
+		position: absolute;
+		top: 0;
+		right: 35px;
 	}
 	.top-page__main-visual .txt.txt03::before {
 		-webkit-transition: width 1s ease 0.6s;
@@ -2818,7 +2857,7 @@ body::before {
 		transition: width 1s ease 0.6s;
 	}
 	.top-page__main-visual .txt {
-		font-size: 36px;
+		font-size: 35px;
 		font-weight: 700;
 		position: absolute;
 		padding: 0 20px;
@@ -3043,7 +3082,7 @@ body::before {
 }
 .top-strong-list p {
 	color: #fff !important;
-	font-size: 14px;
+	font-size: 18px;
 	padding-left: 0;
 	padding-top: 15px;
 }
@@ -3147,21 +3186,21 @@ body::before {
 	overflow: hidden;
 }
 .h200-w250 img {
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .h225-w300 img {
 	filter: brightness(70%);
-	transition: all 1s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 .h225-w300:hover img {
 	filter: brightness(90%);
-	transform: scale(1.1);
-	transition: transform 1s;
+	transform: scale(1.2);
+	transition: transform 0.5s;
 }
 .h200-w250 img:hover {
 	filter: brightness(100%);
-	transform: scale(1.1);
-	transition: transform 1s;
+	transform: scale(1.2);
+	transition: transform 0.5s;
 }
 .top-product--productlist {
 	display: -webkit-box;
@@ -3306,7 +3345,7 @@ body::before {
 		width: 100%;
 	}
 	.top-hero__txtarea {
-		top: 68px;
+		top: 30px;
 		left: 20px;
 	}
 }
@@ -4778,7 +4817,7 @@ table.search_result td {
 }
 .title_top_alpolic {
 	position: absolute;
-	top: 65%;
+	top: 55%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
@@ -4791,7 +4830,7 @@ table.search_result td {
 	margin-bottom: 50px;
 }
 .title_top_alpolic p {
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: bold;
 	color: white;
 	line-height: 1.2;
@@ -4844,6 +4883,12 @@ table.search_result td {
 .form-group.required .col-form-label:after {
 	content: "*";
 	color: red;
+}
+.alpolic-info {
+	padding-bottom: 50px;
+}
+.section-info {
+	margin-top: 50px;
 }
 .section-info h3 {
 	font-size: 48px;
@@ -5072,6 +5117,7 @@ table.search_result td {
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 1em;
 		grid-auto-rows: minmax(3rem, auto);
+		padding-bottom: 0 !important;
 	}
 	.step-box {
 		text-align: left;
@@ -5084,6 +5130,10 @@ table.search_result td {
 	}
 	.title_top_alpolic p {
 		font-size: 18px;
+		margin: 0 5%;
+	}
+	.alpolic-info {
+		padding-bottom: 20px !important;
 	}
 	.section-info h3 {
 		font-size: 30px;
