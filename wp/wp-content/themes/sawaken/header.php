@@ -31,13 +31,14 @@
     <link rel="canonical" href="http://">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!--External CSS Resources-->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
     <!--Include CSS Resources-->
     <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" as="style">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
 
     <?php wp_head(); ?>
 </head>
