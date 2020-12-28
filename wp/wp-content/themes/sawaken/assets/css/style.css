@@ -1440,11 +1440,14 @@ body.home {
 		-ms-flex-align: center;
 		align-items: center;
 		bottom: 30px;
-		right: 5px;
+		right: -10px;
 		padding: 0;
 		height: 0;
 		width: 100px;
 		z-index: 9999;
+	}
+	.page-id-72 .l-footer__pagetop {
+		right: -40px;
 	}
 	.l-footer__pagetop .txt {
 		font-size: 10px;
@@ -4092,6 +4095,9 @@ table.search_result td {
 	.top-message td img {
 		width: 50%;
 	}
+	.table-first-info tr.row {
+		padding-bottom: 0;
+	}
 }
 .company-mission th.mission-text {
 	padding-left: 0;
@@ -4413,6 +4419,16 @@ table.search_result td {
 	.pl-6rem {
 		padding-left: 0;
 	}
+	.site-map-content,
+	.policy-content {
+		padding: 50px 0 0 0;
+	}
+	.site-map-content .list-sub-mn {
+		padding-left: 0 !important;
+	}
+	.site-map-content .list-sub-mn::after {
+		left: 0;
+	}
 }
 .text-required {
 	color: #fff;
@@ -4438,6 +4454,9 @@ table.search_result td {
 }
 .policy_content {
 	font-size: 17px;
+}
+.bold {
+	font-weight: bold;
 }
 @media screen and (max-width: 767.98px) {
 	.policy_content {
@@ -4682,7 +4701,9 @@ table.search_result td {
 .page-title-list-text span:hover::after {
 	opacity: 1;
 }
-.post-type-archive-construction .page-content {
+.post-type-archive-construction .page-content,
+.tax-cat_product .page-content,
+.tax-cat_use .page-content {
 	padding-top: 40px;
 }
 .post-type-archive-construction .image-item,
@@ -4791,7 +4812,8 @@ table.search_result td {
 	padding-top: 10px;
 }
 .page-content-product .item-l .item-content-l .item-content {
-	margin: 10px 90px;
+	margin: 0;
+	padding: 0 90px;
 }
 .page-content-product .item-l .img-box {
 	overflow: hidden;
@@ -4811,6 +4833,9 @@ table.search_result td {
 	transition: transform 1s;
 }
 @media screen and (max-width: 767px) {
+	.business_box {
+		padding-bottom: 50px !important;
+	}
 	.business_box .box-content {
 		padding-left: 0px !important;
 	}
@@ -4843,6 +4868,7 @@ table.search_result td {
 	.page-content-product .item-l .item-content-l .item-content {
 		font-size: 16px;
 		margin: 10px 20px;
+		padding: 0;
 	}
 }
 /* END CUSTOM_DEVELOPMENT PAGE */
@@ -5126,6 +5152,7 @@ table.search_result td {
 .item-product-title {
 	font-weight: 600;
 	line-height: 2;
+	font-size: 1.75rem;
 }
 .ip-description {
 	font-weight: 600;
