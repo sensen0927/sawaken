@@ -3700,6 +3700,7 @@ table.search_result td {
 }
 .title_top_development {
 	font-size: 23px;
+	font-weight: bold;
 	color: #fff;
 	position: absolute;
 	top: 50%;
@@ -4782,6 +4783,7 @@ table.search_result td {
 }
 .item-list-grid .item-l .item-title {
 	color: #2089c5;
+	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 }
@@ -4887,7 +4889,7 @@ table.search_result td {
 }
 .title_top_alpolic {
 	position: absolute;
-	top: 55%;
+	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 100%;
@@ -4897,7 +4899,7 @@ table.search_result td {
 	font-size: 64px;
 	font-weight: bold;
 	color: white;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .title_top_alpolic p {
 	font-size: 24px;
