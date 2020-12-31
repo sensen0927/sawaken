@@ -67,3 +67,19 @@ function disable_visual_editor_filter()
 }
 add_action('load-post.php', 'disable_visual_editor_in_page');
 add_action('load-post-new.php', 'disable_visual_editor_in_page');
+//ACF用
+function my_acf_placeholder() {
+  echo '
+<style>
+.acf-input input::placeholder,
+.acf-input textarea::placeholder {
+  color: #ddd!important;
+}
+.acf-input input:focus::placeholder,
+.acf-input textarea:focus::placeholder {
+  color: #fff!important;
+}
+</style>
+'.PHP_EOL;
+}
+add_action('admin_print_styles', 'my_acf_placeholder');

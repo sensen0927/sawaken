@@ -30,8 +30,6 @@
                 $args = array(
                     'post_type' => 'actual_intro',
                     'post_status' => 'publish',
-                    'orderby' => 'post_date',
-                    'order' => 'DESC',
                     'posts_per_page' => -1,
                 );
                 ?>
@@ -70,6 +68,9 @@
                                 </select>
                             </li>
                         </ul>
+                        <div class="search-box mt-5">
+                            <input type="text" id="free_word_search" placeholder="検索キーワードを入力">
+                        </div>
                     </div>
                     <div class="search_btn">
                         <ul>
@@ -81,21 +82,36 @@
                     <table class="search_result" id="actual_intro_result_table">
                         <thead>
                             <tr>
-                                <th>会社名</th>
+                                <th>計画名</th>
+                                <th>完工年度</th>
+                                <th>建物用途</th>
+                                <th>ゼネコン名</th>
+                                <th>設計事務所</th>
                                 <th>材料</th>
                                 <th>製品</th>
+                                <th>仕様</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                             <?php if (get_field('mp_list')) { ?>
                             <?php while (the_repeater_field('mp_list')) : ?>
-                            <?php $material = get_sub_field('list_material'); ?>
-                            <?php $product = get_sub_field('list_product'); ?>
+                            <?php $list_material = get_sub_field('list_material'); ?>
+                            <?php $list_product = get_sub_field('list_product'); ?>
+                            <?php $list_name = get_sub_field('list_name'); ?>
+                            <?php $list_year = get_sub_field('list_year'); ?>
+                            <?php $list_use = get_sub_field('list_use'); ?>
+                            <?php $list_office = get_sub_field('list_office'); ?>
+                            <?php $list_way = get_sub_field('list_way'); ?>
                             <tr>
+                                <td><?php echo $list_name; ?></td>
+                                <td><?php echo $list_year; ?></td>
+                                <td><?php echo $list_use; ?></td>
                                 <td data-company="<?php the_title(); ?>"><?php the_title(); ?></td>
-                                <td data-material="<?php echo $material->slug; ?>"><?php echo $material->name; ?></td>
-                                <td data-product="<?php echo $product->slug; ?>"><?php echo $product->name; ?></td>
+                                <td><?php echo $list_office; ?></td>
+                                <td data-material="<?php echo $list_material->slug; ?>"><?php echo $list_material->name; ?></td>
+                                <td data-product="<?php echo $list_product->slug; ?>"><?php echo $list_product->name; ?></td>
+                                <td><?php echo $list_way; ?></td>
                             </tr>
                             <?php endwhile; ?>
                             <?php }; ?>
