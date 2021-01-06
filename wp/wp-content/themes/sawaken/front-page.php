@@ -5,25 +5,6 @@ Template Name: トップページ
 ?>
 <?php get_header() //header.phpを取得 
 ?>
-<!--
-<div class="top-global">
-    <div class="l-container">
-        <ol class="top-breadcrumb">
-            <li>
-                <a href="<?php echo home_url(); ?>/company_info/development/">
-                    <span>事業内容</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="<?php echo home_url(); ?>/chose_reason/">
-                    <span>選ばれる理由</span>
-                </a>
-            </li>
-        </ol>
-    </div>
-</div>
--->
 
 <div class="l-content l-content-index">
     <main class="l-main">
@@ -60,15 +41,15 @@ Template Name: トップページ
                                 <!-- #キャッチコピー -->
                                 <div class="l-container">
                                     <div class="row">
-                                        <div class="top-hero__txtarea col-md-8 col-sm-12">
+                                        <div class="top-hero__txtarea col-12">
                                             <div class="top-page__main-visual inview">
                                                 <div class="txt txt02"><span>技術と誠意で飛躍する</span></div>
                                                 <div class="txt txt03"><span>沢建商株式会社</span></div>
                                             </div>
                                         </div>
-                                        <div class="top-hero__txtarea col-md-4 col-sm-12 button_extra_div_sp">
+                                        <div class="top-hero__txtarea col-12 button_extra_div_sp">
                                             <a class="top-hero__txtarea--link c-btn c-btn__border bg-blank button_extra"
-                                                href="construction_example.html"><span>施工事例</span></a>
+                                                href="<?php echo home_url(); ?>/construction/"><span>施工事例</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -83,13 +64,13 @@ Template Name: トップページ
                                 <!-- #キャッチコピー -->
                                 <div class="l-container">
                                     <div class="row">
-                                        <div class="top-hero__txtarea col-md-8 col-sm-12">
+                                        <div class="top-hero__txtarea col-12">
                                             <div class="top-page__main-visual inview">
                                                 <div class="txt txt02"><span>技術と誠意で飛躍する</span></div>
                                                 <div class="txt txt03"><span>沢建商株式会社</span></div>
                                             </div>
                                         </div>
-                                        <div class="top-hero__txtarea col-md-4 col-sm-12 button_extra_div_sp">
+                                        <div class="top-hero__txtarea col-12 button_extra_div_sp">
                                             <a class="top-hero__txtarea--link c-btn c-btn__border bg-blank button_extra"
                                                 href="<?php echo home_url(); ?>/actual_intro/"><span>実績紹介</span></a>
                                         </div>
