@@ -4981,7 +4981,7 @@ table.search_result td {
 .alpolic-form .form-control {
 	font-size: 1.5rem;
 }
-.form-group.required .col-form-label:after {
+.form-group.required .required:after {
 	content: "*";
 	color: red;
 }
