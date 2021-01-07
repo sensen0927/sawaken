@@ -1,5 +1,5 @@
 <?php
-remove_filter('the_content', 'wpautop');
+/*remove_filter('the_content', 'wpautop');*/
 add_image_size('single-post-thumbnail', 200, 160, true);
 add_theme_support('post-thumbnails');
 
@@ -68,8 +68,9 @@ function disable_visual_editor_filter()
 add_action('load-post.php', 'disable_visual_editor_in_page');
 add_action('load-post-new.php', 'disable_visual_editor_in_page');
 //ACF用
-function my_acf_placeholder() {
-  echo '
+function my_acf_placeholder()
+{
+    echo '
 <style>
 .acf-input input::placeholder,
 .acf-input textarea::placeholder {
@@ -80,6 +81,6 @@ function my_acf_placeholder() {
   color: #fff!important;
 }
 </style>
-'.PHP_EOL;
+' . PHP_EOL;
 }
 add_action('admin_print_styles', 'my_acf_placeholder');

@@ -7,7 +7,7 @@
     ?>
 <div class="top-banner">
     <div class="title_top_banner">
-        <span>お知らせ詳細タイトル</span>
+        <span>お知らせ</span>
     </div>
 </div>
 <div class="l-content">
