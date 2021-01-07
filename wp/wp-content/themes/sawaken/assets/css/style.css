@@ -1650,6 +1650,9 @@ body.home .l-main {
 .l-header-logo__link img {
 	width: 150px;
 }
+.l-header-logo__link .logo_sp {
+	display: none;
+}
 .l-header-logo__name {
 	font-size: 14px;
 	font-weight: 600;
@@ -1863,6 +1866,12 @@ body.home .l-main {
 	}
 	.l-header-logo__name img {
 		display: none;
+	}
+	.l-header-logo__link .logo_pc {
+		display: none;
+	}
+	.l-header-logo__link .logo_sp {
+		display: block;
 	}
 }
 @media screen and (max-width: 767px) and (max-width: 320px) {

@@ -48,7 +48,10 @@
         <header class="l-header">
             <h1 class="l-header-logo">
                 <a href="<?php echo home_url(); ?>" class="l-header-logo__link">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="沢建商株式会社">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo.png" alt="沢建商株式会社"
+                        class="logo_pc">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo-sp.png"
+                        alt="沢建商株式会社" class="logo_sp">
                     <span class="l-header-logo__name"><img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/common/logo_2.png"
                             alt="沢建商株式会社"></span>
