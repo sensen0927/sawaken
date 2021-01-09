@@ -405,6 +405,9 @@ input::-ms-clear {
 .c-btn {
 	display: inline-block;
 }
+.text-center {
+	text-align: center;
+}
 @media screen and (max-width: 767px) {
 	.c-btn[target="_blank"] i:after {
 		margin-bottom: 2px;
@@ -2870,7 +2873,7 @@ span.r {
 		transition: width 1s ease 0.6s;
 	}
 	.top-page__main-visual .txt {
-		font-size: 35px;
+		font-size: 7vw;
 		font-weight: 700;
 		position: absolute;
 		padding: 0 20px;
@@ -3784,13 +3787,10 @@ table.search_result td {
 		left: 50%;
 		top: 25%;
 	}
-	/*
+
 	.title_top_development {
-		font-size: 20px;
-		top: 20%;
-		left: 35%;
+		font-size: 5vw;
 	}
-	*/
 	.title_top_chose_reason {
 		font-size: 20px;
 		left: 12%;
@@ -4373,6 +4373,39 @@ table.search_result td {
 .chose_reason-area .page-title-span {
 	font-size: 35px;
 	font-weight: bold;
+	line-height: 1;
+}
+.chose_reason-area .page-title-span::before {
+	content: none;
+}
+.chose_reason-area .page-title-span::after {
+	content: none;
+}
+.chose_reason-area .sub_title {
+	font-size: 15px;
+	font-weight: normal;
+	color: black;
+	position: relative;
+}
+.chose_reason-area .sub_title::before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	bottom: -8px;
+	left: -30px;
+	border-top: 10px solid transparent;
+	border-right: 20px solid #2089c5;
+	border-bottom: 0 solid transparent;
+}
+.chose_reason-area .sub_title::after {
+	position: absolute;
+	content: "";
+	bottom: -8px;
+	left: -10px;
+	background-color: #2089c5;
+	width: calc(100% + 100px);
+	height: 2px;
 }
 @media screen and (max-width: 767px) {
 	.chose_reason_content_box {
@@ -4853,7 +4886,7 @@ table.search_result td {
 }
 .page-content-product .item-l .item-content-l .item-content {
 	margin: 0;
-	padding: 0 90px;
+	padding: 0 70px;
 }
 .page-content-product .item-l .img-box {
 	overflow: hidden;
