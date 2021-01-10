@@ -62,7 +62,7 @@
                             <p class="checklist-text-cont pb-4"><?php echo $genecon; ?></p>
                             <?php } ?>
                             <?php if ($material_product) { ?>
-                            <h3 class="checklist-text pb-4">製品・材料</h3>
+                            <h3 class="checklist-text pb-4">製品</h3>
                             <p class="checklist-text-cont pb-4"><?php echo $material_product; ?></p>
                             <?php } ?>
                             <?php if ($design) { ?>
@@ -70,7 +70,7 @@
                             <p class="checklist-text-cont pb-4"><?php echo $design; ?></p>
                             <?php } ?>
                             <?php if ($cat_product_name) { ?>
-                            <h3 class="checklist-text pb-4">製品</h3>
+                            <h3 class="checklist-text pb-4">材料</h3>
                             <p class="checklist-text-cont pb-4"><?php echo $cat_product_name; ?></p>
                             <?php } ?>
                         </div>

@@ -102,19 +102,20 @@
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">
                             <div class="l-sp__navwrap--item-tit js-accordion-btn">
-                                <span class="l-sp__navwrap--item-tit-ja sub-list-menu">企業情報</span>
-                                <ul class="sub-list">
-                                    <li>
-                                        <a href="<?php echo home_url(); ?>/company_info/development/">
-                                            <span>事業内容</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="<?php echo home_url(); ?>/company_info/chose_reason/">
-                                            <span>選ばれる理由</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <a class="l-sp__navwrap--item-tit-ja"
+                                    href="<?php echo home_url(); ?>/company_info/">企業情報</a>
+                            </div>
+                        </div>
+                        <div class="l-sp__navwrap--item js-accordion">
+                            <div class="l-sp__navwrap--item-tit js-accordion-btn">
+                                <a class="l-sp__navwrap--item-tit-ja"
+                                    href="<?php echo home_url(); ?>/company_info/development/">事業内容</a>
+                            </div>
+                        </div>
+                        <div class="l-sp__navwrap--item js-accordion">
+                            <div class="l-sp__navwrap--item-tit js-accordion-btn">
+                                <a class="l-sp__navwrap--item-tit-ja"
+                                    href="<?php echo home_url(); ?>/company_info/chose_reason/">選ばれる理由</a>
                             </div>
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">
