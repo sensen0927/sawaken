@@ -109,13 +109,13 @@
                         <div class="l-sp__navwrap--item js-accordion">
                             <div class="l-sp__navwrap--item-tit js-accordion-btn">
                                 <a class="l-sp__navwrap--item-tit-ja"
-                                    href="<?php echo home_url(); ?>/company_info/development/">事業内容</a>
+                                    href="<?php echo home_url(); ?>/company_info/development/"> - 事業内容</a>
                             </div>
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">
                             <div class="l-sp__navwrap--item-tit js-accordion-btn">
                                 <a class="l-sp__navwrap--item-tit-ja"
-                                    href="<?php echo home_url(); ?>/company_info/chose_reason/">選ばれる理由</a>
+                                    href="<?php echo home_url(); ?>/company_info/chose_reason/"> - 選ばれる理由</a>
                             </div>
                         </div>
                         <div class="l-sp__navwrap--item js-accordion">

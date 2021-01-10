@@ -4073,6 +4073,9 @@ table.search_result td {
 	font-weight: 700;
 	padding-left: 0;
 }
+.js-order {
+	font-size: 85%;
+}
 .table-first-info th {
 	font-size: 18px;
 	font-family: "メイリオ";
