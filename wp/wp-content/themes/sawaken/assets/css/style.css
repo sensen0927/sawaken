@@ -4913,11 +4913,11 @@ table.search_result td {
 	height: 200px;
 	width: 100%;
 	object-fit: cover;
+	transition: all 0.3s ease;
 }
 .page-content-product .item-l .item-img img:hover {
 	filter: brightness(100%);
 	transform: scale(1.1);
-	transition: transform 0.3s;
 }
 @media screen and (max-width: 767px) {
 	.business_box {
