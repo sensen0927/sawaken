@@ -38,9 +38,15 @@
                     <span class="page-title-span">製品から探す</span>
                     <div class="page-title-list page-title-list-wrapper">
                         <?php
+                        $http = is_ssl() ? 'https' : 'http';
+                        $current_url = $http . '://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
                         $terms = get_terms('cat_product', 'hide_empty=0');
                         foreach ($terms as $term) {
-                            echo '<div class="page-title-list-text"><span><a href="' . get_term_link($term) . '">' . $term->name . '</a></span></div>';
+                            $current_class = '';
+                            if($current_url == get_term_link($term)){
+                                $current_class = ' class="active"';
+                            }
+                            echo '<div class="page-title-list-text"><span'.$current_class.'><a href="' . get_term_link($term) . '">' . $term->name . '</a></span></div>';
                         }
                         ?>
                     </div>

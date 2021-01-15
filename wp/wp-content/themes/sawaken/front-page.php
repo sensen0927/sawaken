@@ -3,7 +3,7 @@
 Template Name: トップページ
 */
 ?>
-<?php get_header() //header.phpを取得 
+<?php get_header() //header.phpを取得
 ?>
 
 <div class="l-content l-content-index">
@@ -89,7 +89,7 @@ Template Name: トップページ
         <div class="top-chose">
             <div class="row">
                 <div class="col-md-5 top-chose_content_box_left">
-                    <h5 class="top-chose_title_jp">沢建商が選ばれる理由</h5>
+                    <h5 class="top-chose_title_jp">沢建商が選ばれる<br class="sp">理由</h5>
                     <p>
                         <span class="top-chose_content_jp">3</span>
                         <span class="top-chose_content_mid_jp">つの</span>

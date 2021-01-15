@@ -1,4 +1,4 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 <div class="top-banner">
     <div class="title_top_banner">
@@ -22,7 +22,7 @@
                     </div>
                     <?php endif; ?>
                 </div>
-                <div class="page-title">
+                <div class="page-title title_top_notice">
                     <span class="page-title-span">お知らせ</span>
                     <div class="page-content">
                         <ul class="top-notice-list">
@@ -44,7 +44,7 @@
                             </li>
                             <?php endwhile; ?>
                         </ul>
-                        <?php else : //記事が1つも無い場合 
+                        <?php else : //記事が1つも無い場合
                     ?>
                         <p>現在表示できる記事はありません。</p><br>
                         <div class="btn">

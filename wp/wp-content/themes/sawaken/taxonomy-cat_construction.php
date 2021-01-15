@@ -1,4 +1,4 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 
 <div class="top-banner">
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <?php endwhile; ?>
-                            <?php else : //記事が1つも無い場合 
+                            <?php else : //記事が1つも無い場合
                             ?>
                             <p>現在表示できる記事はありません。</p><br>
                             <div class="btn">

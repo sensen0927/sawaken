@@ -1,12 +1,12 @@
-<?php get_header(); //header.phpを取得 
+<?php get_header(); //header.phpを取得
 ?>
 <!-- main-content-->
-<?php if (have_posts()) : //条件分岐：投稿があるなら 
+<?php if (have_posts()) : //条件分岐：投稿があるなら
 ?>
-<?php while (have_posts()) : the_post(); //繰り返し処理開始 
+<?php while (have_posts()) : the_post(); //繰り返し処理開始
     ?>
 <div class="top-banner">
-    <div class="title_top_banner">
+    <div class="title_top_banner title_top_notice">
         <span>お知らせ</span>
     </div>
 </div>
@@ -34,7 +34,7 @@
                         <div class="row notice_content">
                             <div class="col-12">
                                 <div class="content_text">
-                                    <?php the_content(); //投稿（固定ページ）の本文を表示 
+                                    <?php the_content(); //投稿（固定ページ）の本文を表示
                                             ?>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                                     $next_post = get_next_post(); // 次の投稿を取得
                                     if ($prev_post || $next_post) : // どちらか一方があれば表示
                                     ?>
-                            <?php if ($prev_post) : // 前の投稿があれば表示 
+                            <?php if ($prev_post) : // 前の投稿があれば表示
                                         ?>
                             <div class="col-4 list_button">
                                 <a href="<?php echo get_permalink($prev_post->ID); ?>" class="prev-link">
@@ -56,7 +56,7 @@
                             <?php endif; ?>
                             <div class="col-4 list_button"><a href="<?php echo home_url(); ?>/notice/">一覧へ戻る</a>
                             </div>
-                            <?php if ($next_post) : // 次の投稿があれば表示 
+                            <?php if ($next_post) : // 次の投稿があれば表示
                                         ?>
                             <div class="col-4 list_button">
                                 <a href="<?php echo get_permalink($next_post->ID); ?>" class="next-link">
@@ -67,12 +67,12 @@
                             <?php endif; ?>
                         </div>
                         <?php endif; ?>
-                        <?php endwhile; // 繰り返し終了 
-                            ?><?php else : //条件分岐：投稿が無い場合は 
+                        <?php endwhile; // 繰り返し終了
+                            ?><?php else : //条件分岐：投稿が無い場合は
                                 ?>
                         <h2>投稿がみつかりません。</h2>
                         <p><a href="<?php echo esc_url(home_url('/')); ?>">トップページに戻る</a></p>
-                        <?php endif; //条件分岐終了 
+                        <?php endif; //条件分岐終了
                         ?>
                     </div>
                 </div>

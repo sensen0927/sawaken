@@ -2,48 +2,44 @@
 <html lang="ja">
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>
-        <?php bloginfo('name'); ?>
-    </title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
     <meta name="viewport" content="width=device-width">
-    <meta name="apple-mobile-web-app-title" content="沢建商株式会社">
-    <meta name="keywords" content="<?php bloginfo('keywords'); ?>">
-    <meta name="description" content="<?php bloginfo('description'); ?>">
-    <meta property="fb:app_id" content="">
-    <meta property="og:locale" content="ja_JP">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="沢建商株式会社">
-    <meta property="og:description" content="沢建商株式会社">
-    <meta property="og:url" content="http://">
-    <meta property="og:site_name" content="沢建商株式会社">
-    <meta property="og:image" content="http://">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="twitter:card" content="">
-    <meta name="twitter:description" content="沢建商株式会社">
-    <meta name="twitter:title" content="沢建商株式会社">
-    <meta name="twitter:image" content="http://">
-    <link rel="canonical" href="http://">
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.ico">
     <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-touch-icon.png">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <!--External CSS Resources-->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
     <!--Include CSS Resources-->
-    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" as="style">
+    <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css?20210115" as="style">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WWKLN2C');</script>
+<!-- End Google Tag Manager -->
+<!-- BowNow -->
+<script id="_bownow_ts">
+var _bownow_ts = document.createElement('script');
+_bownow_ts.charset = 'utf-8';
+_bownow_ts.src = 'https://contents.bownow.jp/js/UTC_c1e7c1b5d70547f5668b/trace.js';
+document.getElementsByTagName('head')[0].appendChild(_bownow_ts);
+</script>
+<!-- End BowNow -->
 
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WWKLN2C" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="pagetop" class="l-page">
         <header class="l-header">
             <h1 class="l-header-logo">

@@ -402,6 +402,14 @@ textarea::-moz-selection {
 input::-ms-clear {
 	display: none;
 }
+.sp{
+	display: none;
+}
+@media screen and (max-width: 767px) {
+	.sp{
+		display: block;
+	}
+}
 .c-btn {
 	display: inline-block;
 }
@@ -3886,7 +3894,12 @@ table.search_result td {
 	margin-left: 50px;
 }
 .page-title-list-text {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+	.page-title-list-text {
+		margin-bottom: 0px;
+	}
 }
 .page-title-list-text span {
 	font-size: 18px;
@@ -3980,11 +3993,16 @@ table.search_result td {
 		height: 250px;
 		font-size: 40px;
 	}
+	table.search_result tbody{
+		border: none;
+	}
 	table.search_result thead {
 		font-weight: 700;
 	}
 	table.search_result tr {
 		border: 2px solid;
+		margin-bottom: 10px;
+		display: block;
 	}
 	table.search_result th {
 		display: inline-block;
@@ -3992,17 +4010,68 @@ table.search_result td {
 		min-height: 30px;
 		line-height: 30px;
 		width: 100%;
+		line-height: 1.2;
 	}
 	table.search_result td {
-		padding-left: 15px;
 		display: inline-block;
-		font-size: 15px;
+		font-size: 14px;
 		min-height: 30px;
 		line-height: 30px;
 		width: 100%;
+		padding: 8px 0 8px 110px;
+		position: relative;
+		line-height: 1.2;
 	}
 	table.search_result td:first-child {
 		font-weight: 700;
+	}
+	table.search_result tr.th-title{
+		display: none!important;
+	}
+	table.search_result td.list_name::before,
+	table.search_result td.list_year::before,
+	table.search_result td.list_use::before,
+	table.search_result td.list_genecon::before,
+	table.search_result td.list_office::before,
+	table.search_result td.list_material::before,
+	table.search_result td.list_product::before,
+	table.search_result td.list_way::before{
+		content: "";
+		color: #4a4a4a;
+		font-size: 14px;
+		background-color: #d6ecff;
+		display: block;
+		width: 100px;
+		padding: 8px 0 0 0;
+		position: absolute;
+		text-align: center;
+		left: 0;
+		top: 0;
+		height: 100%;
+	}
+	    table.search_result td.list_name::before{
+		content: "計画名";
+	}
+	    table.search_result td.list_year::before{
+		content: "完工年度";
+	}
+	    table.search_result td.list_use::before{
+		content: "建物用途";
+	}
+	    table.search_result td.list_genecon::before{
+		content: "ゼネコン名";
+	}
+	    table.search_result td.list_office::before{
+		content: "設計事務所";
+	}
+	    table.search_result td.list_material::before{
+		content: "材料";
+	}
+	    table.search_result td.list_product::before{
+		content: "製品";
+	}
+	    table.search_result td.list_way::before{
+		content: "仕様";
 	}
 	.search_form .company_name {
 		padding-bottom: 10px;
@@ -4126,6 +4195,15 @@ table.search_result td {
 	font-size: 25px;
 	font-weight: 700;
 }
+@media screen and (max-width: 767px) {
+	.top-message .message-head {
+		right: inherit;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+}
+
 .top-message td {
 	padding-left: 0;
 	padding-right: 0;
@@ -4161,7 +4239,7 @@ table.search_result td {
 	padding-right: 0;
 }
 .company_address li {
-	display: inline-flex;
+	/*display: inline-flex;*/
 	margin-right: 10px;
 }
 .company-map {
@@ -4734,7 +4812,9 @@ table.search_result td {
 /* End DEVELOPMENT PAGE */
 /* Begin CONSTRUCTION PAGE */
 .post-type-archive-construction .title_top_banner,
-.post-type-archive-actual_intro .title_top_banner {
+.post-type-archive-actual_intro .title_top_banner,
+.notice-template-default .title_top_banner,
+.post-type-archive-notice .title_top_banner{
 	font-size: 42px;
 	font-weight: bold;
 	top: 15%;
@@ -4783,7 +4863,8 @@ table.search_result td {
 .pb-100 {
 	padding-bottom: 100px;
 }
-.page-title-list-text span:hover::after {
+.page-title-list-text span:hover::after,
+.page-title-list-text span.active::after {
 	opacity: 1;
 }
 .post-type-archive-construction .page-content,
@@ -4809,7 +4890,7 @@ table.search_result td {
 	.page-title-list-wrapper {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 1em;
+		grid-gap: 0.2em;
 		grid-auto-rows: minmax(2rem, auto);
 		padding-left: 1rem;
 	}
@@ -5265,6 +5346,38 @@ table.search_result td {
 }
 .page-id-42 input[type="submit"] {
 	background-color: #3c93c9;
+}
+.page-id-42 .back-button {
+	color: #fff;
+	margin-right: 20px;
+	width: 80px;
+	z-index: 999999;
+	height: 50px;
+	background: #aaa;
+	border-radius: 5px;
+}
+@media screen and (max-width: 767px){
+	.page-id-42 .back-button {
+		margin-right: 10px;
+	}
+	.page-id-42 .wpcf7-submit {
+		width: 100px;
+	}
+}
+input[type="text"].wpcf7c-conf,
+input[type="email"].wpcf7c-conf,
+input[type="tel"].wpcf7c-conf,
+select.wpcf7c-conf,
+textarea.wpcf7c-conf{
+	background: none!important;
+	-webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset!important;
+	border: none!important;
+	-webkit-appearance: none;
+	outline: none;
+	color: #000;
+}
+textarea.wpcf7c-conf{
+	height: 100px;
 }
 .popup {
 	position: fixed;

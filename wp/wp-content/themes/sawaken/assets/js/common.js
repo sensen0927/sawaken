@@ -1,3 +1,8 @@
+var ua = {};
+ua.name = window.navigator.userAgent.toLowerCase();
+ua.isiPhone = ua.name.indexOf('iphone') >= 0;
+ua.isAndroid = ua.name.indexOf('android') >= 0;
+ua.isTouch = ('ontouchstart' in window);
 $(function(){
     if($("#actual_intro_submit").length){
         $(document).on('click', '#actual_intro_submit', function(){
@@ -25,6 +30,12 @@ $(function(){
             if(product_name){
                 $("#actual_intro_result_table tr td[data-product][data-product != "+product_name+"]").parent('tr').hide();
             }
+        });
+    }
+    if(ua.isiPhone || ua.isAndroid){
+        $('.telnum').each(function(){
+            var str = $(this).text();
+            $(this).html($('<a>').attr('href', 'tel:' + str.replace(/-/g, '')).append(str + '</a>'));
         });
     }
 });

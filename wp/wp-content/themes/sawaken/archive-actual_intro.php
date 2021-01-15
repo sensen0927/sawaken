@@ -81,7 +81,7 @@
                     </div>
                     <table class="search_result" id="actual_intro_result_table">
                         <thead>
-                            <tr>
+                            <tr class="th-title">
                                 <th>計画名</th>
                                 <th>完工年度</th>
                                 <th>建物用途</th>
@@ -104,14 +104,14 @@
                             <?php $list_office = get_sub_field('list_office'); ?>
                             <?php $list_way = get_sub_field('list_way'); ?>
                             <tr>
-                                <td><?php echo $list_name; ?></td>
-                                <td><?php echo $list_year; ?></td>
-                                <td><?php echo $list_use; ?></td>
-                                <td data-company="<?php the_title(); ?>"><?php the_title(); ?></td>
-                                <td><?php echo $list_office; ?></td>
-                                <td data-material="<?php echo $list_material->slug; ?>"><?php echo $list_material->name; ?></td>
-                                <td data-product="<?php echo $list_product->slug; ?>"><?php echo $list_product->name; ?></td>
-                                <td><?php echo $list_way; ?></td>
+                                <td class="list_name"><?php echo $list_name; ?></td>
+                                <td class="list_year"><?php echo $list_year; ?></td>
+                                <td class="list_use"><?php echo $list_use; ?></td>
+                                <td class="list_genecon" data-company="<?php the_title(); ?>"><?php the_title(); ?></td>
+                                <td class="list_office"><?php echo $list_office; ?></td>
+                                <td class="list_material" data-material="<?php echo $list_material->slug; ?>"><?php echo $list_material->name; ?></td>
+                                <td class="list_product" data-product="<?php echo $list_product->slug; ?>"><?php echo $list_product->name; ?></td>
+                                <td class="list_way"><?php echo $list_way; ?></td>
                             </tr>
                             <?php endwhile; ?>
                             <?php }; ?>
