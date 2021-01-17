@@ -3618,6 +3618,11 @@ table.search_result th {
 	border: 1px solid #707070;
 	width: 400px;
 }
+@media screen and (min-width: 768px) {
+	table.search_result tr.th-title{
+		display: table-row!important;
+	}
+}
 table.search_result th {
 	color: #4a4a4a;
 	min-height: 60px;
