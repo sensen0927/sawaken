@@ -52,26 +52,36 @@
                         ?>
                 <div class="l-container pt-md-5">
                     <div class="row">
-                        <div class="col-12 col-md-6 pl-md-5">
+                        <div class="col-12 col-md-6 pl-md-5 construction-list">
                             <?php if ($cat_use_name) { ?>
-                            <h3 class="checklist-text pb-4">建物用途</h3>
-                            <p class="checklist-text-cont pb-4"><?php echo $cat_use_name; ?></p>
+                                <div class="item">
+                                    <h3 class="checklist-text">建物用途</h3>
+                                    <p class="checklist-text-cont"><?php echo $cat_use_name; ?></p>
+                                </div>
                             <?php } ?>
                             <?php if ($genecon) { ?>
-                            <h3 class="checklist-text pb-4">ゼネコン名</h3>
-                            <p class="checklist-text-cont pb-4"><?php echo $genecon; ?></p>
+                                <div class="item">
+                                    <h3 class="checklist-text">ゼネコン名</h3>
+                                    <p class="checklist-text-cont"><?php echo $genecon; ?></p>
+                                </div>
                             <?php } ?>
                             <?php if ($material_product) { ?>
-                            <h3 class="checklist-text pb-4">製品</h3>
-                            <p class="checklist-text-cont pb-4"><?php echo $material_product; ?></p>
+                                <div class="item">
+                                    <h3 class="checklist-text">製品</h3>
+                                    <p class="checklist-text-cont"><?php echo $material_product; ?></p>
+                                </div>
                             <?php } ?>
                             <?php if ($design) { ?>
-                            <h3 class="checklist-text pb-4">設計事務所</h3>
-                            <p class="checklist-text-cont pb-4"><?php echo $design; ?></p>
+                                <div class="item">
+                                    <h3 class="checklist-text">設計事務所</h3>
+                                    <p class="checklist-text-cont"><?php echo $design; ?></p>
+                                </div>
                             <?php } ?>
                             <?php if ($cat_product_name) { ?>
-                            <h3 class="checklist-text pb-4">材料</h3>
-                            <p class="checklist-text-cont pb-4"><?php echo $cat_product_name; ?></p>
+                                <div class="item">
+                                    <h3 class="checklist-text">材料</h3>
+                                    <p class="checklist-text-cont"><?php echo $cat_product_name; ?></p>
+                                </div>
                             <?php } ?>
                         </div>
                         <div class="col-12 col-md-6">
